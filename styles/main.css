@@ -29,3 +29,7 @@ header {
 .company {
     font-weight: 600;
 }
+
+#track {background-color: darkgray}
+#changer {background-color: darkgray}
+#compare {background-color: lightgray}
