@@ -1,24 +1,31 @@
-body{
+/* BODY */
+body {
     font-family: serif;
     font-size: 16px;
 }
-#logo {
-    height: 15%;
-    width: 15%;
-    margin:15px;
+/*  HEAD   */
 
-}
 header {
     background-color: #264d73;
 }
+
+#logo {
+    height: 15%;
+    width: 15%;
+    margin: 15px;
+}
+
+
+/*wygląd opisu zajawki*/
 .head-paragraph {
     color: #ffffff;
     font-style: italic;
     float: right;
-    margin: 70px 20px 20px 10px;
-    line-height: 2em ;
+    margin: 60px 25px 20px 10px;
+    line-height: 2em;
     text-align: right;
 }
-span {
+/* nazwa firmy*/
+.company {
     font-weight: 600;
 }
