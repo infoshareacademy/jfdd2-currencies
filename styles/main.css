@@ -29,3 +29,12 @@ header {
 .company {
     font-weight: 600;
 }
+/* FOOTER*/
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 5px;
+    font-style: italic;
+    font-size: smaller;
+    text-align: center;
+}
