@@ -3,6 +3,7 @@ body {
     font-family: serif;
     font-size: 16px;
 }
+
 /*  HEAD   */
 
 header {
@@ -15,7 +16,6 @@ header {
     margin: 15px;
 }
 
-
 /*wygląd opisu zajawki*/
 .head-paragraph {
     color: #ffffff;
@@ -25,11 +25,23 @@ header {
     line-height: 32px;
     text-align: right;
 }
+
 /* nazwa firmy*/
 .company {
     font-weight: 600;
 }
 
-#track {background-color: darkgray}
-#changer {background-color: darkgray}
-#compare {background-color: lightgray}
+#track {
+    background-color: darkgray;
+    height: 100px
+}
+
+#changer {
+    background-color: darkgray;
+    height: 100px
+}
+
+#compare {
+    background-color: lightgray;
+    height: 100px
+}
