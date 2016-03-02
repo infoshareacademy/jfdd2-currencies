@@ -1,0 +1,1 @@
+# jfdd2-currencies
