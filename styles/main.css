@@ -1,8 +1,58 @@
+/* BODY */
+body {
+    font-family: serif;
+    font-size: 16px;
+}
+
+/*  HEAD   */
+
+header {
+    background-color: #264d73;
+
+}
+
 #logo {
     height: 15%;
     width: 15%;
-    margin:15px;
+    margin: 16px;
 }
-header {
-    background-color: #264d73;
+
+
+/*wygląd opisu zajawki*/
+.head-paragraph {
+    color: #ffffff;
+    font-style: italic;
+    float: right;
+    margin: 60px 25px 20px 10px;
+    line-height: 32px;
+    text-align: right;
+}
+
+/* nazwa firmy*/
+.company {
+    font-weight: 600;
+}
+
+#track {
+    background-color: darkgray;
+    height: 100px
+}
+
+#changer {
+    background-color: darkgray;
+    height: 100px
+}
+
+#compare {
+    background-color: lightgray;
+    height: 100px
+}
+/* FOOTER*/
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 5px;
+    font-style: italic;
+    font-size: smaller;
+    text-align: center;
 }
