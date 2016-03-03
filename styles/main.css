@@ -17,12 +17,12 @@ header {
     background: url("../images/zajawka-bg.png") center no-repeat;
     height: 306px;
 }
-.teaser {
-    background-color: #264d73;
-    padding: 50px;
 
-
-}
+/*Klasa teaser dotyczy menu TODO*/
+/*.teaser {*/
+    /*background-color: #264d73;*/
+    /*padding: 50px;*/
+/*}*/
 
 
 
