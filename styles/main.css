@@ -24,7 +24,11 @@ header {
     /*padding: 50px;*/
 /*}*/
 
+.funkcje-png {
+    height: 250px;
+    padding:30px;
 
+}
 
 
 #logo {
@@ -59,17 +63,17 @@ img {
 
 #track {
     background-color: darkgray;
-    height: 100px
+    height: 400px
 }
 
 #changer {
     background-color: darkgray;
-    height: 100px
+    height: 400px
 }
 
 #compare {
     background-color: lightgray;
-    height: 100px
+    height: 400px
 }
 /* FOOTER*/
 footer {
