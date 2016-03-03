@@ -7,10 +7,8 @@ body {
 
 /*  HEAD   */
 
-.teaser {
+header {
     background-color: #264d73;
-    padding: 50px;
-
 
 }
 
@@ -28,7 +26,11 @@ img {
     width: auto;
 }
 
+.funkcje-png {
+    height: 250px;
+    padding:30px;
 
+}
 
 /*wygląd opisu zajawki*/
 .head-paragraph {
@@ -48,17 +50,17 @@ img {
 
 #track {
     background-color: darkgray;
-    height: 100px
+    height: 400px
 }
 
 #changer {
     background-color: darkgray;
-    height: 100px
+    height: 400px
 }
 
 #compare {
     background-color: lightgray;
-    height: 100px
+    height: 400px
 }
 /* FOOTER*/
 footer {
@@ -77,26 +79,4 @@ div{
     text-align: center;
 }
 
- ul {
-     list-style-type: none;
-     margin: 0;
-     padding: 0;
-     overflow: hidden;
-     background-color: #333;
- }
-
-li {
-    float: left;
-}
-
-li a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #111;
-}
+.fun
