@@ -8,13 +8,15 @@ body {
 
 header {
     background-color: #264d73;
+
 }
 
 #logo {
     height: 15%;
     width: 15%;
-    margin: 15px;
+    margin: 16px;
 }
+
 
 /*wygląd opisu zajawki*/
 .head-paragraph {
@@ -44,4 +46,13 @@ header {
 #compare {
     background-color: lightgray;
     height: 100px
+}
+/* FOOTER*/
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 5px;
+    font-style: italic;
+    font-size: smaller;
+    text-align: center;
 }
