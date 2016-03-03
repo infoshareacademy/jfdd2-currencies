@@ -3,20 +3,26 @@
 body {
     font-family: serif;
     font-size: 16px;
+    background-color:  #FFFCF4;
+}
+#max-width {
+    max-width: 1028px;
+    margin: 0 auto;
 }
 
 /*  HEAD   */
 
 header {
-    background-color: #264d73;
-
+    /*background-color: #264d73;*/
+    background: url("../images/zajawka-bg.png") center no-repeat;
+    /*background-size: 50%;*/
+    height: 306px;
 }
-
 
 
 #logo {
     height: 15%;
-    width: 15%;
+    width: auto;
     margin: 16px;
 }
 
@@ -33,7 +39,7 @@ img {
     color: #ffffff;
     font-style: italic;
     float: right;
-    margin: 60px 25px 20px 10px;
+    margin: 140px 25px 20px 10px;
     line-height: 32px;
     text-align: right;
 
@@ -67,9 +73,12 @@ footer {
     font-style: italic;
     font-size: smaller;
     text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 1028px;
 
 }
-div{
+.function_description div{
     float: left;
     width: 33.333%;
     text-align: center;
