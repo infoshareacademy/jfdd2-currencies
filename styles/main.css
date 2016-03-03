@@ -18,10 +18,14 @@ header {
     height: 15%;
     width: 15%;
     margin: 16px;
-
-
-
 }
+
+img {
+
+    height: 20px;
+    width: auto;
+}
+
 
 
 /*wygląd opisu zajawki*/
@@ -56,7 +60,7 @@ header {
 }
 /* FOOTER*/
 footer {
-    float: none;
+    clear:both;
     background-color: #003366;
     color: white;
     padding: 5px;
