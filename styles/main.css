@@ -13,11 +13,18 @@ body {
 /*  HEAD   */
 
 header {
-    /*background-color: #264d73;*/
+
     background: url("../images/zajawka-bg.png") center no-repeat;
-    /*background-size: 50%;*/
     height: 306px;
 }
+.teaser {
+    background-color: #264d73;
+    padding: 50px;
+
+
+}
+
+
 
 
 #logo {
@@ -82,4 +89,28 @@ footer {
     float: left;
     width: 33.333%;
     text-align: center;
+}
+
+ ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     background-color: #333;
+ }
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
 }
