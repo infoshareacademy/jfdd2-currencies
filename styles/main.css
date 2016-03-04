@@ -3,6 +3,8 @@ body {
     font-family: serif;
     font-size: 16px;
     background-color:  white;
+    background: url("../images/body-background.png") top left repeat;
+    /*background-size: 30%;*/
 }
 #max-width {
     max-width: 1028px;
@@ -148,7 +150,7 @@ footer {
     height: auto;
     width: 342px;
     text-align: center;
-    background: linear-gradient(to top, white,#FFF6EB);
+    background: linear-gradient(to top, white, #F2F4F7);
 }
 
 
