@@ -115,6 +115,13 @@ header {
     margin-top: 30px;
 
 }
+h1.main-func  {
+    font-family: serif;
+    font-weight: 600;
+    font-style: italic;
+    color: #5e889e;
+
+}
 
 
 
@@ -186,7 +193,7 @@ h1.icon-title {
     font-weight: 700;
     font-style: italic;
     margin-top: 10px;
-    color:   #DFE7EC;
+    color:   #8CCAEB;
 }
 /*  INPUT EMAIL */
 form {
@@ -254,4 +261,3 @@ footer {
 
 
 
-                  /* MENU */
