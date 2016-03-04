@@ -197,7 +197,6 @@ h1.icon-title {
 }
 /*  INPUT EMAIL */
 form {
-    position: fixed;
     bottom: 50px;
     clear: both;
     display: block;
@@ -224,7 +223,6 @@ input:focus {
     background-color: white;
 }
 input[type="submit"] {
-    font-family: Serif;
     border-radius: 3px;
     box-shadow: 2px 2px #333333;
     background-color: lightgray;
@@ -240,14 +238,12 @@ footer {
     font-style: italic;
     font-size: smaller;
     text-align: center;
-    position: fixed;
     bottom: 0;
     width: 1023px;
-    height: 50px;
+    height: 70px;
 
 }
 .footer-txt {
-    margin-top: 5px;
     margin-bottom: 1px;
     font-size: 12px;
 }
