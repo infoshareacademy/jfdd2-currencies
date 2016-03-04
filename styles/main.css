@@ -3,10 +3,11 @@
 
 
 /* BODY */
+                         /* BODY */
 body {
     font-family: serif;
     font-size: 16px;
-    background-color:  #FFFCF4;
+    background-color:  white;
 }
 #max-width {
     max-width: 1028px;
@@ -46,25 +47,43 @@ float: right;
 
 
 
-
+/*  HEAD   */
 header {
 
     background: url("../images/zajawka-bg.png") center no-repeat;
     height: 306px;
 }
 
-/*Klasa teaser dotyczy menu TODO*/
-/*.teaser {*/
-    /*background-color: #264d73;*/
-    /*padding: 50px;*/
-/*}*/
+                       /* FUNKCJE ZAJAWKI */
 
 .funkcje-png {
-    height: 250px;
+    height: 100px;
     padding:30px;
+    opacity: 0.6;
+    margin-top: 30px;
 
 }
+.funkcje-png:hover {
+    animation: pulse2  1.5s linear infinite;
+}
 
+ @-webkit-keyframes pulse2 {
+     0% {
+         transform: scale(1.1);
+         opacity: .6;
+
+     }
+     50% {
+         transform: scale(0.9);
+         opacity: .2;
+
+     }
+     100% {
+         transform: scale(1);
+         opacity: .6;
+
+     }
+ }
 
 
 
@@ -80,8 +99,9 @@ img {
 .head-paragraph {
     color: #ffffff;
     font-style: italic;
+    font-size: 20px;
     float: right;
-    padding: 120px 25px 0px 10px;
+    padding: 120px 25px 0 10px;
     line-height: 32px;
     text-align: right;
 
@@ -93,20 +113,50 @@ img {
 }
 
 #track {
-    background-color: darkgray;
+    /*background-color: darkgray;*/
     height: 400px
 }
 
 #changer {
-    background-color: darkgray;
+    /*background-color: darkgray;*/
     height: 400px
 }
 
 #compare {
-    background-color: lightgray;
+    /*background-color: lightgray;*/
     height: 400px
 }
-/* FOOTER*/
+
+
+                     /*  INPUT EMAIL */
+form {
+    position: fixed;
+    bottom: 50px;
+    clear: both;
+    display: block;
+    width: 1028px;
+    height: 40px;
+    margin: 0 auto;
+    background-color: #5E1215;
+}
+p.input-txt {
+    font-style: italic;
+    font-size: 14px;
+    color: white;
+    display: inline;
+    float: left;
+    text-align: center ;
+    margin:12px 20px 0 220px;
+}
+input{
+    margin:10px 20px 0 2px;
+    background-color: lightgray ;
+}
+input:focus {
+    box-shadow: inset 1px 1px 2px 0 #c9c9c9;
+    background-color: white ;
+}
+                            /* FOOTER*/
 footer {
     clear:both;
     background-color: #003366;
