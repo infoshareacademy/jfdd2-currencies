@@ -224,8 +224,11 @@ input:focus {
 input[type="submit"] {
     border-radius: 3px;
     box-shadow: 2px 2px #333333;
-    background-color: lightgray;
+    background-color: white;
     color: #001038;
+    font-family: serif;
+    font-style: italic;
+    font-weight: 600;
 }
 
 /* FOOTER*/
