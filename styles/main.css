@@ -68,8 +68,9 @@ li a {
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0 16px;
     text-decoration: none;
+    line-height: 80px;
 }
 
 li a:hover {
@@ -84,21 +85,10 @@ ul {
     background-color: #333;
 }
 
-li {
-    float: left;
-}
-
-li a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 20px 16px;
-    text-decoration: none;
-}
 
 li a:hover {
     background-color: #111;
-    padding-bottom: 40px;
+
 }
 
 /*  HEAD   */
