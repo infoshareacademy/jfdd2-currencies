@@ -208,11 +208,11 @@ p.input-txt {
     display: inline;
     float: left;
     text-align: center;
-    margin: 12px 20px 0 220px;
+    margin: 5px 20px 0 220px;
 }
 
 input {
-    margin: 10px 20px 0 2px;
+    margin: 0 20px 0 2px;
     background-color: lightgray;
 }
 
@@ -258,7 +258,7 @@ footer {
 /*@media screen and (max-width: 1000px) {*/
     footer, form.media {
         width: auto;
-        padding: 5px;
+        padding: 10px;
         height: auto;
     /*}*/
     /*#max-width2 {*/
