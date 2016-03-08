@@ -189,7 +189,34 @@ h1.icon-title {
     margin-top: 10px;
     color: #8CCAEB;
 }
+/* Opis o nas*/
+. #o-nas {
+    background-color: #333;
+    color:white;
+    height: auto;
+    width: 1023px;
+}
+.o-nas {
+    width: 501px;
+    float: left;
+    margin: 20px 5px;
+}
 
+.fotka{
+    float: left;
+    margin: 20px 10px 0 ;
+}
+.o-nas-naglowki {
+    font-weight: bold;
+    font-size: larger;
+
+}
+.p-o-nas{
+    display: block;
+    width: 320px;
+    float: right;
+    text-align: justify;
+}
 /*  INPUT EMAIL */
 form {
     bottom: 50px;
@@ -224,8 +251,12 @@ input:focus {
 input[type="submit"] {
     border-radius: 3px;
     box-shadow: 2px 2px #333333;
-    background-color: lightgray;
+    background-color: white;
     color: #001038;
+    font-family: serif;
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 /* FOOTER*/
