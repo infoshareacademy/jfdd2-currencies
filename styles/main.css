@@ -200,6 +200,9 @@ h1.icon-title {
     width: 501px;
     float: left;
     margin: 20px 5px;
+    color:black;
+    opacity:0.8;
+    font-family:"Droid Sans Japanese";
 }
 
 .fotka{
