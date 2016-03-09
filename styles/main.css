@@ -85,7 +85,6 @@ ul {
     background-color: #333;
 }
 
-
 li a:hover {
     background-color: #111;
 
@@ -108,6 +107,7 @@ header {
     transition: transform 0.3s ease-out;
 
 }
+
 .funkcje-png:hover {
     transform: scale(1.1);
 }
@@ -160,7 +160,6 @@ img.funkcje-icon {
 
 }
 
-
 .funkcje-icon:hover {
     animation: pulse2 1.5s linear infinite;
 }
@@ -189,37 +188,42 @@ h1.icon-title {
     margin-top: 10px;
     color: #8CCAEB;
 }
+
 /* Opis o nas*/
 . #o-nas {
     background-color: #333;
-    color:white;
+    color: white;
     height: auto;
     width: 1023px;
 }
+
 .o-nas {
     width: 501px;
     float: left;
     margin: 20px 5px;
-    color:black;
-    opacity:0.8;
-    font-family:"Droid Sans Japanese";
+    color: black;
+    opacity: 0.8;
+    font-family: "Droid Sans Japanese";
 }
 
-.fotka{
+.fotka {
     float: left;
-    margin: 20px 10px 0 ;
+    margin: 20px 10px 0;
 }
+
 .o-nas-naglowki {
     font-weight: bold;
     font-size: larger;
 
 }
-.p-o-nas{
+
+.p-o-nas {
     display: block;
     width: 320px;
     float: right;
     text-align: justify;
 }
+
 /*  INPUT EMAIL */
 form {
     bottom: 50px;
@@ -289,24 +293,40 @@ footer {
     background: linear-gradient(to top, white, #F2F4F7);
 }
 
-/*@media screen and (max-width: 1000px) {*/
-    footer, form.media {
-        width: auto;
-        padding: 10px;
-        height: auto;
-    /*}*/
-    /*#max-width2 {*/
-        /*margin:0 auto;*/
-        /*display: block;*/
-        /*width: auto;*/
-    /*}*/
-    /*div, .funkcjonalnosc-icons, .function_description {*/
-        /*clear: both;*/
-        /*display: inline;*/
-        /*margin: 0 auto;*/
-    /*}*/
+.back-to-top {
+    display: none;
+    opacity: 1;
+    position: fixed;
+    right: 300px;
+    bottom: 1%;
 
-    /*body {*/
-        /*background: #5e889e*/
-    /*}*/
 }
+
+.arrow {
+    width: 80px;
+    height: 80px;
+
+}
+
+/*@media screen and (max-width: 1000px) {*/
+footer, form.media {
+    width: auto;
+    padding: 10px;
+    height: auto;
+}
+
+/*}*/
+/*#max-width2 {*/
+/*margin:0 auto;*/
+/*display: block;*/
+/*width: auto;*/
+/*}*/
+/*div, .funkcjonalnosc-icons, .function_description {*/
+/*clear: both;*/
+/*display: inline;*/
+/*margin: 0 auto;*/
+/*}*/
+
+/*body {*/
+/*background: #5e889e*/
+/*}*/
