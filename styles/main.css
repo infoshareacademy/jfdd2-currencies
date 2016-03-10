@@ -119,6 +119,7 @@ h1.main-func {
     font-style: italic;
     color: #5e889e;
 
+
 }
 
 /*wygląd opisu zajawki*/
@@ -132,6 +133,7 @@ h1.main-func {
     padding: 120px 25px 0 10px;
     line-height: 32px;
     text-align: right;
+    text-shadow: 1px 1px 0.5px black;
 
 }
 
