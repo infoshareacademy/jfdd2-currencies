@@ -8,6 +8,9 @@
     <link href="styles/main.css" rel="stylesheet">
     <link href="styles/reset.css" rel="stylesheet">
     <link rel="icon" type="image/jpg" href="images/oliwka.png">
+    <script type = "text/javascript" src="zajawkaZdjecia.js"></script>
+    <link rel="stylesheet" href="styles/cookieStyle.css">
+
 </head>
 <body>
 <p class="back-to-top"><img src="images/ikony-funkcji/go-top.png" class="arrow"></p>
@@ -30,7 +33,7 @@
 <div id="max-width">
 
 
-    <header>
+    <header id="myimage" onload="change_background('../images/zajawka-bg2.png')">
 
         <p class="head-paragraph">All currencies in one place.<br>
             Easily follow and efficiently personalize your exchange rates with <span class="company">Valutar</span>.</p>
@@ -173,12 +176,13 @@
 
         </section>
     </div>
-    <form class="media">
+    <form class="media" action="http://jfdd.infoshareaca.nazwa.pl/mailer.php" method="POST">
         <p class="input-txt">If you are interested in our offer, please leave us your email address:</p>
-        <input type="email" name="email">
-        <input type="submit" name="submit">
-    </form>
 
+        <input type="text" name="myField">
+        <input type="hidden" name="receiver" value="agnberka@gmail.com">
+        <input type="submit" name="submit" value="Send">
+    </form>
     <footer>
         <p class="footer-txt">Copyright &copy; Oliva Hackers Team</p>
 
@@ -194,6 +198,8 @@
 
     </footer>
 </div>
+<script src="Javascript/cookie-monster.js"></script>
+<script src="Javascript/cookiesJS.js"></script>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="javascript/main.js"></script>
 <script src="javascript/isHuman.js"></script>

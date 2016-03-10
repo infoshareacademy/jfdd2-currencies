@@ -7,7 +7,8 @@
 body {
     font-family: serif;
     font-size: 16px;
-    background: url("../images/body-background.png") top left repeat;
+    background: url("../images/szachownica-dolar3.png") top left repeat;
+    background-attachment: fixed;
 }
 
 #max-width {
@@ -126,6 +127,7 @@ h1.main-func {
     color: #ffffff;
     font-style: italic;
     font-size: 20px;
+    font-weight: bold;
     float: right;
     padding: 120px 25px 0 10px;
     line-height: 32px;
@@ -202,8 +204,12 @@ h1.icon-title {
     float: left;
     margin: 20px 5px;
     color: black;
-    opacity: 0.8;
-    font-family: "Droid Sans Japanese";
+    opacity: 1;
+    /*font-family: "Droid Sans Japanese";*/
+    font-family: serif;
+    color: #001038;
+    line-height: 1.5;
+    text-indent: 40px;
 }
 
 .fotka {
@@ -214,6 +220,7 @@ h1.icon-title {
 .o-nas-naglowki {
     font-weight: bold;
     font-size: larger;
+    font-style: italic;
 
 }
 
