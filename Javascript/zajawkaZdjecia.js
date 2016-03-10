@@ -1,6 +1,6 @@
 var backgrounds = [
-    'url(images/zajawka-bg1.png)',
-    'url(images/zajawka-bg2.png)',
+    'url(images/zajawka-bg2-monopoly.png)',
+    'url(images/zajawka-bg2-banknotes.png)',
     'url(images/zajawka-bg.png)'
 ];
 var currentBackgroundId = 0;
