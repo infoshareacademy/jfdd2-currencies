@@ -202,8 +202,12 @@ h1.icon-title {
     float: left;
     margin: 20px 5px;
     color: black;
-    opacity: 0.8;
-    font-family: "Droid Sans Japanese";
+    opacity: 1;
+    /*font-family: "Droid Sans Japanese";*/
+    font-family: serif;
+    color: #001038;
+    line-height: 1.5;
+    text-indent: 40px;
 }
 
 .fotka {
@@ -214,6 +218,7 @@ h1.icon-title {
 .o-nas-naglowki {
     font-weight: bold;
     font-size: larger;
+    font-style: italic;
 
 }
 
