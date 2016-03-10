@@ -142,15 +142,15 @@ h1.main-func {
 /*wygląd opisu zajawki*/
 .head-paragraph {
 
-    color: #ffffff;
+    color: #162029;
     font-style: italic;
-    font-size: 20px;
+    font-size: 21px;
     font-weight: bold;
     float: right;
     padding: 120px 25px 0 10px;
     line-height: 32px;
     text-align: right;
-    text-shadow: 1px 1px 0.5px black;
+    text-shadow: 1px 1px 0.5px white;
 
 }
 
