@@ -91,6 +91,7 @@ li a {
     padding: 0 16px;
     text-decoration: none;
     line-height: 80px;
+    font-size: 20px;
 }
 
 li a:hover {
@@ -112,9 +113,10 @@ li a:hover {
 
 /*  HEAD   */
 header {
-
+ padding-top: 80px;
     background: url("../images/zajawka-bg.png") center no-repeat;
     height: 306px;
+    background-position: bottom;
 
 }
 
@@ -151,7 +153,7 @@ h1.main-func {
     font-size: 21px;
     font-weight: bold;
     float: right;
-    padding: 140px 25px 0 10px;
+    padding: 120px 25px 0 10px;
     line-height: 32px;
     text-align: right;
     text-shadow: 1px 1px 0.5px white;

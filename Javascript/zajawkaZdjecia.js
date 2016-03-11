@@ -6,7 +6,8 @@ var backgrounds = [
 var currentBackgroundId = 0;
 
 function setBackground(backgroundId) {
-    $('header').css({'background': backgrounds[backgroundId]});
+    $('header').css({'background': backgrounds[backgroundId],
+    'background-position': 'bottom'});
 }
 
 setInterval(function () {
