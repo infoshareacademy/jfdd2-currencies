@@ -47,6 +47,7 @@ body {
     position:fixed;
     box-shadow: 0px 2px 3px black;
     z-index: 100;
+    float: left;
 
 
 }
