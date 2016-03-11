@@ -1,3 +1,4 @@
+
 var backgrounds = [
     'url(images/zajawka-bg2-monopoly.png)',
     'url(images/zajawka-bg2-banknotes.png)',
