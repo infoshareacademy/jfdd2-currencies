@@ -23,8 +23,9 @@
 body {
     font-family: serif;
     font-size: 16px;
-    background: url("../images/szachownica-dolar3.png") top left repeat;
-    background-attachment: fixed;
+    background-color: white;
+    /*background: url("../images/szachownica-dolar3.png") top left repeat;*/
+    /*background-attachment: fixed;*/
 }
 
 #max-width {
@@ -236,18 +237,20 @@ h1.icon-title {
     font-family: serif;
     color: #001038;
     line-height: 1.5;
-    text-indent: 40px;
 }
 
 .fotka {
     float: left;
     margin: 20px 10px 0;
+    width: 144px;
+    height: auto;
 }
 
 .o-nas-naglowki {
     font-weight: bold;
     font-size: larger;
     font-style: italic;
+    text-indent: 40px;
 
 }
 
@@ -256,6 +259,7 @@ h1.icon-title {
     width: 320px;
     float: right;
     text-align: justify;
+    padding: 5px;
 }
 
 /*  INPUT EMAIL */
@@ -275,12 +279,17 @@ p.input-txt {
     color: white;
     display: inline;
     float: left;
-    text-align: center;
+    text-align: right;
     margin: 5px 20px 0 220px;
+}
+.formLabel {
+    font-weight: 600;
+    text-shadow: 1px 1px 1px #001038;
+    font-size: 1.2em;
 }
 
 input {
-    margin: 0 20px 0 2px;
+    margin: 2px 20px 5px 2px;
     background-color: lightgray;
 }
 

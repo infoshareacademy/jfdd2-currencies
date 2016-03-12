@@ -177,13 +177,21 @@
 
         </section>
     </div>
-    <form class="media" action="http://jfdd.infoshareaca.nazwa.pl/mailer.php" method="POST">
-        <p class="input-txt">If you are interested in our offer, please leave us your email address:</p>
 
-        <input type="email" name="myField">
+    <form class="media" action="http://jfdd.infoshareaca.nazwa.pl/mailer.php" method="POST">
+        <p class="input-txt">If you are interested in our offer, please leave us your
+            <span class="formLabel">telephone number:</span><br>
+            or  <span class="formLabel">email address:</span></p>
+
+        <input type="text" name="telField" placeholder="+(XX)XXX-XXX-XXX"
+               pattern='[\+][\(][0-9]{2}[\)][0-9]{3}[\-][0-9]{3}[\-][0-9]{3}' title='Phone Number (Format: +(99)999-999-999)'><br>
+
+
+        <input type="email" name="emailField" placeholder="example@domain.com">
         <input type="hidden" name="receiver" value="agnberka@gmail.com">
         <input type="submit" name="submit" value="Send">
     </form>
+
     <footer>
         <p class="footer-txt">Copyright &copy; Oliva Hackers Team</p>
 
