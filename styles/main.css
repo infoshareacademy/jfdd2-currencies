@@ -367,26 +367,28 @@ footer, form.media {
     transform: scale(1.2);
 }
 
+
+/*  ZASTOSOWANIE MEDIA QuERIES DO DOSTOSOWANIA STRONY DLA KOMOREK I TABLETOW*/
+
 @media screen and (max-width: 1022px) {
-    #max-width2 {
-        clear: both;
-        margin: 0 auto;
-        display: block;
-        width: 100%;
-        margin: 0 auto;
-    }
+
+    /* sekcja głównych funkcjonalnosci */
 
     .function_description div {
         height: 309px;
         width: 100%;
         text-align: center;
     }
-    .funkcjonalnosc-icons div{
+    /* sekcja  funkcjonalnosci */
+
+    .funkcjonalnosc-icons div {
         height: 80px;
         width: 50%;
         margin: 0 auto;
         text-align: center;
     }
+    /* sekcja o nas*/
+
     .o-nas {
         width: 100%;
         float: left;
@@ -397,6 +399,7 @@ footer, form.media {
         color: #001038;
         line-height: 1.5;
     }
+
     .p-o-nas {
         display: block;
         width: 50%;
@@ -405,17 +408,39 @@ footer, form.media {
         padding: 10px;
         margin: 0 5%;
     }
+
     h1.o-nas-naglowki {
         display: inline;
         text-align: center;
         margin-bottom: 5px;
         margin-left: 7%;
 
-
     }
-    .fotka{
+
+    .fotka {
         margin-left: 5%;
     }
 
+    /* sekcja z inputami */
+
+    input {
+        right:10px;
+        margin: 5px 1% 5px 72%;
 
     }
+    /* strzałka do powrotu do góry strony*/
+    .back-to-top {
+        /*display: none;*/
+        /*opacity: 1;*/
+        position: fixed;
+        right: 2px;
+        bottom: 90px;
+
+    }
+
+    .arrow {
+        width: auto;
+        height: 30px;
+
+    }
+}
