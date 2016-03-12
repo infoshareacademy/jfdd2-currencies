@@ -41,14 +41,13 @@ body {
 /*  HEAD   */
 /*  MENU+LOGO   */
 .menu {
+    width: 100%;
     display: block;
-    width: 1023px;
     margin: 0 auto;
     background-color: #333;
     position:fixed;
     box-shadow: 0px 2px 3px black;
     z-index: 100;
-    float: left;
 
 
 }
@@ -341,7 +340,7 @@ footer {
     opacity: 1;
     position: fixed;
     right: 49px;
-    bottom: 1%;
+    bottom: 100px;
 
 }
 
