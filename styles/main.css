@@ -135,7 +135,7 @@ header {
 }
 
 .funkcje-png:hover {
-    transform: scale(1.1);
+    transform: scale(1.3);
 }
 
 h1.main-func {
@@ -167,10 +167,10 @@ h1.main-func {
     font-weight: 600;
 }
 
-#track, #changer, #compare {
+/*div.descriptionIcon  {*/
 
-    height: 309px
-}
+    /*height: 309px*/
+/*}*/
 
 /*IKONY FUNKCJI*/
 .funkcjonalnosc-icons div {
@@ -222,7 +222,7 @@ h1.icon-title {
 . #o-nas {
     background-color: #333;
     color: white;
-    height: auto;
+    /*height: auto;*/
     width: 1023px;
 }
 
@@ -230,7 +230,6 @@ h1.icon-title {
     width: 501px;
     float: left;
     margin: 20px 5px;
-    color: black;
     opacity: 1;
     /*font-family: "Droid Sans Japanese";*/
     font-family: serif;
@@ -306,6 +305,11 @@ input[type="submit"] {
     font-style: italic;
     font-weight: 600;
     letter-spacing: 1px;
+    transition: transform 0.3s ease-out;
+}
+input[type="submit"]:hover{
+
+    transform: scale(1.3);
 }
 
 /* FOOTER*/
@@ -329,7 +333,7 @@ footer {
 
 .function_description div {
     float: left;
-    height: auto;
+    height: 309px;
     width: 341px;
     text-align: center;
     background: linear-gradient(to top, white, #F2F4F7);
@@ -350,25 +354,68 @@ footer {
 
 }
 
-/*@media screen and (max-width: 1000px) {*/
+
 footer, form.media {
     width: auto;
     padding: 10px;
     height: auto;
 }
+.ikonka-size img {
+    transition: transform 0.3s ease-out;
+}
+.ikonka-size img:hover {
+    transform: scale(1.2);
+}
 
-/*}*/
-/*#max-width2 {*/
-/*margin:0 auto;*/
-/*display: block;*/
-/*width: auto;*/
-/*}*/
-/*div, .funkcjonalnosc-icons, .function_description {*/
-/*clear: both;*/
-/*display: inline;*/
-/*margin: 0 auto;*/
-/*}*/
+@media screen and (max-width: 1022px) {
+    #max-width2 {
+        clear: both;
+        margin: 0 auto;
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
 
-/*body {*/
-/*background: #5e889e*/
-/*}*/
+    .function_description div {
+        height: 309px;
+        width: 100%;
+        text-align: center;
+    }
+    .funkcjonalnosc-icons div{
+        height: 80px;
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .o-nas {
+        width: 100%;
+        float: left;
+        margin: 20px 5px;
+        opacity: 1;
+        /*font-family: "Droid Sans Japanese";*/
+        font-family: serif;
+        color: #001038;
+        line-height: 1.5;
+    }
+    .p-o-nas {
+        display: block;
+        width: 50%;
+        float: left;
+        text-align: justify;
+        padding: 10px;
+        margin: 0 5%;
+    }
+    h1.o-nas-naglowki {
+        display: inline;
+        text-align: center;
+        margin-bottom: 5px;
+        margin-left: 7%;
+
+
+    }
+    .fotka{
+        margin-left: 5%;
+    }
+
+
+    }
