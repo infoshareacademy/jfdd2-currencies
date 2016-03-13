@@ -17,5 +17,14 @@ jQuery(document).ready(function () {
         event.preventDefault();
         jQuery('html, body').animate({scrollTop: 0}, duration);
         return false;
-    })
+    });
+
+    // ZAPOBIEGANIE WYSYŁANIA PUSTGO FORMULARZA
+
+    /*if ($.trim($("#email").val()) === "" && $.trim($(" #telephone").val()) === "" ) {
+        $('#form').submit(function(item) {
+            item.preventDefault();
+            alert('Please fill out one of the fields to submit properly');
+        })
+    }*/
 });
