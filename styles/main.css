@@ -65,6 +65,7 @@ body {
     float: left;
     transition: transform .2s ease-out;
 
+
 }
 #logo-w-menu:hover{
    transform: scale(1.18);
@@ -385,7 +386,7 @@ footer, form.media {
     /* sekcja głównych funkcjonalnosci */
 
     .function_description div {
-        height: 309px;
+        height: 100px;
         width: 100%;
         text-align: center;
     }
