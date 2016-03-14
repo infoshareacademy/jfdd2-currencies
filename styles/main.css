@@ -1,4 +1,4 @@
-
+/* MICRO CLEARFIX */
 
 .cf:before,
 .cf:after {
@@ -23,8 +23,8 @@
 body {
     font-family: serif;
     font-size: 16px;
-    background: url("../images/szachownica-dolar3.png") top left repeat;
-    background-attachment: fixed;
+    background-color: white;
+
 }
 
 #max-width {
@@ -32,20 +32,15 @@ body {
     margin: 0 auto;
 }
 
-/*#max-width2 {
-    max-width: 1028px;
-    margin: 0 auto;
-}*/
-
-/*  HEAD   */
 /*  MENU+LOGO   */
 .menu {
-    max-width: 1023px;
+    width: 100%;
+    display: block;
     margin: 0 auto;
     background-color: #333;
-    /*position:relative;*/
-    /*right: 50px; top: 45px.*/
-    /*ul style float: right;list-style-type:none;"*/
+    position: fixed;
+    box-shadow: 0px 2px 3px black;
+    z-index: 100;
 
 }
  .fotka-lang {
@@ -66,7 +61,6 @@ body {
 
 
 
-
 #logo-w-menu {
 
     height: 60px;
@@ -76,14 +70,17 @@ body {
     margin-left: 23px;
     margin-top: 10px;
     float: left;
-    /*position: absolute;*/
-    /*left: 0;*/
+    transition: transform .2s ease-out;
+
+}
+
+#logo-w-menu:hover {
+    transform: scale(1.18);
+
 }
 
 .menu1 {
-    /*position: absolute;*/
-    /*right: 0;*/
-    /*width: 500px;*/
+
     float: right;
 }
 
@@ -106,10 +103,15 @@ li a {
     padding: 0 16px;
     text-decoration: none;
     line-height: 80px;
+    font-size: 20px;
 }
 
 li a:hover {
     background-color: #111;
+}
+
+li:last-child {
+    margin-right: 60px;
 }
 
 ul {
@@ -127,9 +129,11 @@ li a:hover {
 
 /*  HEAD   */
 header {
-
+    padding-top: 80px;
     background: url("../images/zajawka-bg.png") center no-repeat;
     height: 306px;
+    background-position: bottom;
+
 }
 
 /* FUNKCJE ZAJAWKI */
@@ -144,7 +148,7 @@ header {
 }
 
 .funkcje-png:hover {
-    transform: scale(1.1);
+    transform: scale(1.3);
 }
 
 h1.main-func {
@@ -152,7 +156,6 @@ h1.main-func {
     font-weight: 600;
     font-style: italic;
     color: #5e889e;
-
 
 }
 
@@ -174,11 +177,6 @@ h1.main-func {
 /* nazwa firmy*/
 .company {
     font-weight: 600;
-}
-
-#track, #changer, #compare {
-
-    height: 309px
 }
 
 /*IKONY FUNKCJI*/
@@ -231,7 +229,7 @@ h1.icon-title {
 . #o-nas {
     background-color: #333;
     color: white;
-    height: auto;
+    /*height: auto;*/
     width: 1023px;
 }
 
@@ -239,24 +237,25 @@ h1.icon-title {
     width: 501px;
     float: left;
     margin: 20px 5px;
-    color: black;
     opacity: 1;
     /*font-family: "Droid Sans Japanese";*/
     font-family: serif;
     color: #001038;
     line-height: 1.5;
-    text-indent: 40px;
 }
 
 .fotka {
     float: left;
     margin: 20px 10px 0;
+    width: 144px;
+    height: auto;
 }
 
 .o-nas-naglowki {
     font-weight: bold;
     font-size: larger;
     font-style: italic;
+    text-indent: 40px;
 
 }
 
@@ -265,6 +264,7 @@ h1.icon-title {
     width: 320px;
     float: right;
     text-align: justify;
+    padding: 5px;
 }
 
 /*  INPUT EMAIL */
@@ -284,12 +284,18 @@ p.input-txt {
     color: white;
     display: inline;
     float: left;
-    text-align: center;
+    text-align: right;
     margin: 5px 20px 0 220px;
 }
 
+.formLabel {
+    font-weight: 600;
+    text-shadow: 1px 1px 1px #001038;
+    font-size: 1.2em;
+}
+
 input {
-    margin: 0 20px 0 2px;
+    margin: 2px 20px 5px 2px;
     background-color: lightgray;
 }
 
@@ -307,6 +313,12 @@ input[type="submit"] {
     font-style: italic;
     font-weight: 600;
     letter-spacing: 1px;
+    transition: transform 0.3s ease-out;
+}
+
+input[type="submit"]:hover {
+
+    transform: scale(1.3);
 }
 
 /* FOOTER*/
@@ -319,7 +331,7 @@ footer {
     font-size: smaller;
     text-align: center;
     bottom: 0;
-    width: 1023px;
+    /*width: 100%;*/
     height: 70px;
 }
 
@@ -330,7 +342,7 @@ footer {
 
 .function_description div {
     float: left;
-    height: auto;
+    height: 309px;
     width: 341px;
     text-align: center;
     background: linear-gradient(to top, white, #F2F4F7);
@@ -340,8 +352,8 @@ footer {
     display: none;
     opacity: 1;
     position: fixed;
-    right: 50px;
-    bottom: 1%;
+    right: 49px;
+    bottom: 100px;
 
 }
 
@@ -351,25 +363,171 @@ footer {
 
 }
 
-/*@media screen and (max-width: 1000px) {*/
 footer, form.media {
     width: auto;
     padding: 10px;
     height: auto;
 }
 
-/*}*/
-/*#max-width2 {*/
-/*margin:0 auto;*/
-/*display: block;*/
-/*width: auto;*/
-/*}*/
-/*div, .funkcjonalnosc-icons, .function_description {*/
-/*clear: both;*/
-/*display: inline;*/
-/*margin: 0 auto;*/
-/*}*/
+.ikonka-size img {
+    transition: transform 0.3s ease-out;
+}
 
-/*body {*/
-/*background: #5e889e*/
-/*}*/
+.ikonka-size img:hover {
+    transform: scale(1.2);
+}
+
+/*  ZASTOSOWANIE MEDIA QuERIES DO DOSTOSOWANIA STRONY DLA KOMOREK I TABLETOW*/
+
+@media screen and (max-width: 1022px) {
+
+    /* menu  */
+    li:last-child {
+        margin-right: 0;
+    }
+
+    /* sekcja głównych funkcjonalnosci */
+    .function_description div {
+        height: 100px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* sekcja  funkcjonalnosci */
+    .funkcjonalnosc-icons div {
+        height: 80px;
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /* sekcja o nas*/
+    .o-nas {
+        width: 100%;
+        float: left;
+        margin: 20px 5px;
+        opacity: 1;
+        /*font-family: "Droid Sans Japanese";*/
+        font-family: serif;
+        color: #001038;
+        line-height: 1.5;
+    }
+
+    .p-o-nas {
+        display: block;
+        width: 50%;
+        float: left;
+        text-align: justify;
+        padding: 10px;
+        margin: 0 5%;
+    }
+
+    h1.o-nas-naglowki {
+        display: inline;
+        text-align: center;
+        margin-bottom: 5px;
+        margin-left: 7%;
+
+    }
+
+    .fotka {
+        margin-left: 5%;
+    }
+
+    /* sekcja z inputami */
+    input {
+        right: 10px;
+        margin: 5px 1% 5px 72%;
+
+    }
+
+    /* strzałka do powrotu do góry strony*/
+    .back-to-top {
+        /*display: none;*/
+        /*opacity: 1;*/
+        position: fixed;
+        right: 5px;
+        bottom: 90px;
+
+    }
+
+    .arrow {
+        width: auto;
+        height: 30px;
+
+    }
+}
+
+@media screen and (max-width: 1022px) {
+
+    /* menu  */
+    li:last-child {
+        margin-right: 0;
+    }
+
+    /* sekcja głównych funkcjonalnosci */
+    .function_description div {
+        height: 309px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* sekcja  funkcjonalnosci */
+    .funkcjonalnosc-icons div {
+        height: 80px;
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /* sekcja o nas*/
+    .o-nas {
+        width: 100%;
+        float: left;
+        margin: 20px 5px;
+        opacity: 1;
+        /*font-family: "Droid Sans Japanese";*/
+        font-family: serif;
+        color: #001038;
+        line-height: 1.5;
+    }
+
+    .p-o-nas {
+        display: block;
+        width: 50%;
+        float: left;
+        text-align: justify;
+        padding: 10px;
+        margin: 0 5%;
+    }
+
+    h1.o-nas-naglowki {
+        display: inline;
+        text-align: center;
+        margin-bottom: 5px;
+        margin-left: 7%;
+
+    }
+
+    .fotka {
+        margin-left: 5%;
+    }
+
+    /* sekcja z inputami */
+    input {
+        right: 10px;
+        margin: 5px 1% 5px 72%;
+
+    }
+
+    /* strzałka do powrotu do góry strony*/
+    .back-to-top {
+        /*display: none;*/
+        /*opacity: 1;*/
+        position: fixed;
+        right: 10px;
+        bottom: 90px;
+
+    }
+
+}
