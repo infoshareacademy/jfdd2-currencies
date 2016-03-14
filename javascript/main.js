@@ -23,6 +23,6 @@ $(document).ready(function () {
       item.preventDefault();
       alert('Please fill out one of the fields to submit properly');
       }
-    })
+    });
 
 });
