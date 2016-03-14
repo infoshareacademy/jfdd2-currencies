@@ -8,7 +8,7 @@ var isHuman = false;
 $(document).ready(function () {
     $(window).scroll(function (event) {
         isHuman = true;
-        consol.log(isHuman)
+        consol.log(isHuman);
 
     });
 });

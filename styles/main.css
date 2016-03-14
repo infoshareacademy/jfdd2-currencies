@@ -50,12 +50,15 @@ body {
 }
  .fotka-lang {
 
-     height: 48px;
-     width: 48px;
+     height: 38px;
+     width: 38px;
      float: right;
 
+ }
 
-
+ .fotka-lang:hover {
+     transform: scale(1.1);
+     cursor:pointer;
  }
 
 
