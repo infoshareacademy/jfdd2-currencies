@@ -1,6 +1,4 @@
-/**
- * Created by olaf on 09.03.16.
- */
+
 
 $(document).ready(function () {
   var offset = 200;
@@ -20,11 +18,11 @@ $(document).ready(function () {
   });
 
   // ZAPOBIEGANIE WYSYŁANIA PUSTGO FORMULARZA
+    $('#form').submit(function (item) {
+      if ($.trim($('#email').val()) === "" && $.trim($('#telephone').val()) === ""){
+      item.preventDefault();
+      alert('Please fill out one of the fields to submit properly');
+      }
+    })
 
-  /*if ($.trim($("#email").val()) === "" && $.trim($(" #telephone").val()) === "" ) {
-   $('#form').submit(function(item) {
-   item.preventDefault();
-   alert('Please fill out one of the fields to submit properly');
-   })
-   }*/
 });
