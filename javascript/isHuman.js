@@ -6,11 +6,8 @@
 
 var isHuman = false;
 $(document).ready(function () {
-    $(window).scroll(function (event) {
-        isHuman = true;
-        consol.log(isHuman)
-
-    });
+  $(window).scroll(function (event) {
+    isHuman = true;
+    consol.log(isHuman)
+  });
 });
-
-
