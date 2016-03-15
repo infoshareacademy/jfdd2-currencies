@@ -1,11 +1,11 @@
 $(document).ready(function () {
   $('.js-en').click(function () {
     $('.polski').hide();
-    $('.english').show();
+    $('.angielski').show();
   });
 });
 
 $('.js-pl').click(function () {
-  $( '.english').hide();
-  $('.polski').show();
-})
+  $( '.polski').show();
+  $('.angielski').hide();
+});

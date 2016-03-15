@@ -95,9 +95,15 @@ ul {
 
 
 .polski {
-
-    visibility: visible;
+    visibility:visible;
     display: none;
+
+
+
+}
+
+.angielski {
+
 }
 
 
