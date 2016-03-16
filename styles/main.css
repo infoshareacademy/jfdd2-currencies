@@ -43,27 +43,22 @@ body {
     z-index: 100;
 
 }
- .fotka-lang {
 
-     height: 28px;
-     width: 28px;
-     float: right;
-     padding-right:7px;
-     margin-top: 48px;
-     display:inline;
+.fotka-lang {
 
- }
+    height: 28px;
+    width: 28px;
+    float: right;
+    padding-right: 7px;
+    margin-top: 48px;
+    display: inline;
 
- .fotka-lang:hover {
-     transform: scale(1.1);
-     cursor:pointer;
- }
+}
 
-
-
-
-
-
+.fotka-lang:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
 
 #logo-w-menu {
     opacity: 1;
@@ -96,20 +91,14 @@ ul {
     background-color: #333;
 }
 
-
 .polski {
     visibility: visible;
     display: none;
 }
 
-
-
-
-
 .angielski {
 
 }
-
 
 li {
     float: left;
