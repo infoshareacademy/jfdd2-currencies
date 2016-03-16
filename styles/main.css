@@ -333,6 +333,7 @@ input[type="submit"] {
     font-weight: 600;
     letter-spacing: 1px;
     transition: transform 0.3s ease-out;
+    position: absolute;
 }
 
 input[type="submit"]:hover {
