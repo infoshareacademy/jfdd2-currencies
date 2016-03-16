@@ -48,6 +48,9 @@ body {
      height: 28px;
      width: 28px;
      float: right;
+     padding-right:7px;
+     margin-top: 48px;
+     display:inline;
 
  }
 
