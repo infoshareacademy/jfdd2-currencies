@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Valutar</title>
@@ -10,10 +10,10 @@
 </head>
 <body>
 
-<p class="back-to-top"><img src="images/ikony-funkcji/go-top.png" class="arrow"></p>
+<p class="back-to-top"><img src="images/ikony-funkcji/go-top.png" class="arrow" alt="Go to Top"></p>
 
 <div class="menu">
-    <a href="#"><img id="logo-w-menu" src="images/logo-sm.png" alt="logo"></a>
+   <img id="logo-w-menu" src="images/logo-sm.png" alt="logo">
     <ul class="menu1">
         <li><a href="#">Home</a></li>
         <li><a href="#opis">What we do</a></li>
@@ -22,6 +22,7 @@
     <div class="clear"></div>
 
 </div>
+
 
 
 <div id="max-width">
@@ -40,7 +41,7 @@
     </header>
 
     <div id="max-width2">
-
+    <!--    <a name="anchor" id="top">Myanchor</a>-->
         <section class="function_description cf" id="opis">
             <div id="track">
 
@@ -103,7 +104,7 @@
         <section id="o-nas" class="cf">
             <div class="o-nas">
 
-                <img class="fotka" src="images/profilowe/lukasz.png">
+                <img class="fotka" src="images/profilowe/lukasz.png" alt="Łukasz Smola">
 
                 <h1 class="o-nas-naglowki"> Łukasz Smola</h1>
                 <br>
@@ -117,7 +118,7 @@
 
             <div class="o-nas">
 
-                <img class="fotka" src="images/profilowe/kuba.png">
+                <img class="fotka" src="images/profilowe/kuba.png" alt="Jakub Girjat">
 
 
                 <h1 class="o-nas-naglowki">Jakub Girjat</h1>
@@ -133,7 +134,7 @@
             </div>
             <div class="o-nas">
 
-                <img class="fotka" src="images/profilowe/olaf.png">
+                <img class="fotka" src="images/profilowe/olaf.png" alt="Olaf Czapla">
 
                 <h1 class="o-nas-naglowki">Olaf Czempa</h1>
 
@@ -148,7 +149,7 @@
                     milionom ludzi w codziennych transakcjach bez względu na to, gdzie się znajdują.</p>
             </div>
             <div class="o-nas">
-                <img class="fotka" src="images/profilowe/aga.png">
+                <img class="fotka" src="images/profilowe/aga.png" alt="Agnieszka Berka">
 
                 <h1 class="o-nas-naglowki">Agnieszka Berka</h1>
 
@@ -165,16 +166,18 @@
         </section>
     </div>
 
-    <form id="form" class="media" action="http://jfdd.infoshareaca.nazwa.pl/mailer.php" method="POST">
+    <form id="form" class="media" action="http://jfdd.infoshareaca.nazwa.pl/mailer.php" method="POST" title="form">
         <p class="input-txt">If you are interested in our offer, please leave us your
             <span class="formLabel">telephone number:<br>
             or email address:</span></p>
-
-        <input id="telephone" type="text" name="telField" placeholder="+(XX)XXXXXXXXX"
+        <label id="telephoneLabel" for="telephone">Telephone</label>
+        <input id="telephone" type="text" title="Telephone Number" name="telField" placeholder="+(XX)XXXXXXXXX"
                pattern='[\+][\(][0-9]{2}[\)][0-9]{3}[0-9]{3}[0-9]{3}'
                title='Phone Number (Format: +(99)999999999)'>
         <br>
-        <input id="email" type="email" name="emailField" placeholder="example@domain.com">
+        <label id="emailLabel" for="email">Email</label>
+        <input id="email" title="Email Adress" type="email" name="emailField" placeholder="example@domain.com">
+
         <input type="hidden" name="receiver" value="agnberka@gmail.com">
         <input type="submit" name="submit" value="Send">
     </form>
@@ -199,6 +202,7 @@
 <script src="Javascript/cookiesJS.js"></script>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="javascript/main.js"></script>
+<script src="javascript/menu-configure.js"></script>
 <script src="javascript/isHuman.js"></script>
 <script type="text/javascript" src="Javascript/zajawkaZdjecia.js"></script>
 
