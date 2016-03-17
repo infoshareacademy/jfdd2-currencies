@@ -41,7 +41,9 @@ body {
     position: fixed;
     box-shadow: 0px 2px 3px black;
     z-index: 100;
-
+}
+.menu-small{
+    height: 20px;
 }
 
 .fotka-lang {
