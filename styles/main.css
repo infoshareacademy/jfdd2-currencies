@@ -43,15 +43,20 @@ body {
     z-index: 100;
 }
 
+/*SMALL-MENU FUNCTIONS*/
 .menu-small,
 .menu-small ul,
 .menu-small .logo-w-menu {
     background-color: yellow;
-    height: 40px;
+    height: 20px;
 }
 
 .menu-small .fotka-lang {
     margin-top: 10px;
+}
+.menu-small .menu1{
+    font-size: 20px;
+    text-align: inherit;
 }
 
 .fotka-lang {
@@ -91,6 +96,7 @@ body {
 .menu1 {
 
     float: right;
+
 }
 
 ul {
@@ -154,7 +160,7 @@ header {
 
 }
 
-/* FUNKCJE ZAJAWKI */
+/* TEASER FUNCTIONS */
 
 .funkcje-png {
     height: 100px;
@@ -177,7 +183,7 @@ h1.main-func {
 
 }
 
-/*wygląd opisu zajawki*/
+/*TEASER DESCRIPTION APPEARANCE*/
 .head-paragraph {
 
     color: #162029;
@@ -192,12 +198,12 @@ h1.main-func {
 
 }
 
-/* nazwa firmy*/
+/* COMPANY NAME*/
 .company {
     font-weight: 600;
 }
 
-/*IKONY FUNKCJI*/
+/*FUNCTIONS ICONS*/
 .funkcjonalnosc-icons div {
     float: left;
     padding: 30px 0 30px 0;
@@ -243,7 +249,7 @@ h1.icon-title {
     color: #8CCAEB;
 }
 
-/* Opis o nas*/
+/* DESCRIPTION ABOUT-US*/
 . #o-nas {
     background-color: #333;
     color: white;
@@ -285,7 +291,7 @@ h1.icon-title {
     padding: 5px;
 }
 
-/*  INPUT EMAIL */
+/*  INPUT E-MAIL */
 form {
     bottom: 50px;
     clear: both;
@@ -395,8 +401,7 @@ footer, form.media {
 .ikonka-size img:hover {
     transform: scale(1.2);
 }
-
-/*  ZASTOSOWANIE MEDIA QuERIES DO DOSTOSOWANIA STRONY DLA KOMOREK I TABLETOW*/
+/*MEDIA QURIES FOR MOBILES, SMARTPHONES AND TABLETS*/
 
 @media screen and (max-width: 1022px) {
 
@@ -412,7 +417,7 @@ footer, form.media {
         text-align: center;
     }
 
-    /* sekcja  funkcjonalnosci */
+    /* FUNCTIONALITY SECTION */
     .funkcjonalnosc-icons div {
         height: 80px;
         width: 50%;
