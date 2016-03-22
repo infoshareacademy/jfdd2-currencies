@@ -56,7 +56,7 @@ body {
     margin-top: 10px;
 }
 
-.menu-small li a {
+.menu-small li a  {
     display: inline-block;
     color: white;
     text-align: center;
