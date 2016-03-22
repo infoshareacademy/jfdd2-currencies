@@ -13,6 +13,8 @@ $(document).ready(function () {
       $('.back-to-top').fadeOut(duration);
     }
 
+
+
     var $menu = $('.menu');
     if (scrollTop == 0){
       $menu.removeClass('menu-small');
