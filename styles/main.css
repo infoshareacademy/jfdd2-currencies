@@ -55,9 +55,9 @@ body {
 }
 .menu-small .logo-w-menu {
     background-color: #333;
-    height: 35px;
+    height: 45px;
     margin-top: 10px;
-    transition-duration: 200ms;
+    transition-duration: 100ms;
 }
 
 .menu-small li a  {
@@ -113,7 +113,7 @@ body {
     margin-left: 23px;
     margin-top: 10px;
     float: left;
-    transition-duration: 200ms;
+    transition-duration: 100ms;
 
 }
 
