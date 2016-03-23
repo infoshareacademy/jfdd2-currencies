@@ -64,13 +64,13 @@ body {
     text-decoration: none;
     line-height: 60px;
     font-size: 20px;
-    transition-duration: 500ms;
+    transition-duration: 200ms;
 
 }
 
 .menu-small .fotka-lang {
     margin-top: 17px;
-    transition-duration: 500ms;
+    transition-duration: 200ms;
 
 }
 
@@ -149,6 +149,8 @@ li a {
     text-decoration: none;
     line-height: 80px;
     font-size: 20px;
+
+
 }
 
 li a:hover {
