@@ -64,15 +64,20 @@ body {
     text-decoration: none;
     line-height: 60px;
     font-size: 20px;
+    transition-duration: 500ms;
+
 }
 
 .menu-small .fotka-lang {
     margin-top: 17px;
+    transition-duration: 500ms;
+
 }
 
 .menu-small .menu1{
     font-size: 20px;
     text-align: inherit;
+
 }
 
 .fotka-lang {
