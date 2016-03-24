@@ -1,9 +1,9 @@
 $(document).ready(function () {
 
 var backgrounds = [
-  'url(images/zajawka-bg2-monopoly.png)',
-  'url(images/zajawka-bg2-banknotes.png)',
-  'url(images/zajawka-bg.png)'
+  'url(images/teaser-bg2-monopoly.png)',
+  'url(images/banknotes)',
+  'url(images/teaser-bg.png)'
 ];
 var currentBackgroundId = 0;
 

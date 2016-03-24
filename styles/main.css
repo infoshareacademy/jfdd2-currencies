@@ -49,11 +49,11 @@ body {
 /*SMALL-MENU FUNCTIONS +
 UNDERLINED SUBMENUS*/
 
-.menu-small,
+/*.menu-small,
 .menu-small ul,
 .menu-small .logo-in-menu {
 
-}
+}*/
 .menu-small .logo-in-menu {
     background-color: #333;
     height: 45px;
@@ -171,7 +171,7 @@ ul {
 /*  HEAD   */
 header {
     padding-top: 80px;
-    background: url("../images/zajawka-bg.png") center no-repeat;
+    background: url("../images/teaser-bg.png") center no-repeat;
     height: 306px;
     background-position: bottom;
 }
