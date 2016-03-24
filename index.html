@@ -13,26 +13,27 @@
 <p class="back-to-top"><img src="images/functions-icons/go-top.png" class="arrow"></p>
 
 <div class="menu">
-    <a href="#"><img class="logo-w-menu" src="images/logo-sm.png" alt="logo"></a>
-    <div class="ikonki-flagi">
+    <a href="#"><img class="logo-in-menu" src="images/logo-sm.png" alt="logo"></a>
+    <div class="icons-flags">
 
-        <img class="fotka-lang js-en" src="images/functions-icons/fotki-krajów/uk-icon.png" alt="flaga-uk">
-        <img class="fotka-lang js-pl" src="images/functions-icons/fotki-krajów/Poland-icon.png" alt="flaga-pl">
-
+        <img class="photo-lang js-en" src="images/functions-icons/countries-flags/uk-icon.png" alt="flag-uk">
+        <img class="photo-lang js-pl" src="images/functions-icons/countries-flags/poland-icon.png" alt="flag-pl">
 
     </div>
     <ul class="menu1">
         <li><a href="#top" class="selected"><span class="polski">Strona główna</span><span class="angielski"> Home</span></a></li>
         <li><a href="#opis"><span class="polski">Co robimy</span><span class="angielski">What we do</span></a></li>
-        <li><a href="#o-nas"><span class="polski">O Nas</span><span class="angielski">About us</span></a></li>
+        <li><a href="#o-nas"><span class="polski">O nas</span><span class="angielski">About us</span></a></li>
     </ul>
     <div class="clear"></div>
 
 </div>
 
-
 <div id="max-width">
-    <header id="myimage" onload="change_background('../images/zajawka-bg2.png')">
+    <header id="myimage" onload="function change_background(s) {
+
+    }
+    change_background('../images/zajawka-bg2.png')">
 
 
         <p class="head-paragraph"><span class="polski">Wszystkie waluty w jednym miejscu</span><span class="angielski">
@@ -49,18 +50,18 @@
         <section class="function_description cf" id="opis">
             <div id="track">
 
-                <img class="funkcje-png" src="images/ikona-track.png" alt="ikona-track">
+                <img class="functions-png" src="images/icon-track.png" alt="ikona-track">
 
                 <h1 class="main-func"><span class="polski"> Śledz kursy walut</span><span class="angielski">
                     Track your favourite currencies</span></h1>
             </div>
             <div id="compare">
-                <img class="funkcje-png" src="images/ikona_compare.png" alt="ikona-porownanie">
+                <img class="functions-png" src="images/icon-compare.png" alt="ikona-porownanie">
 
                 <h1 class="main-func"><span class="polski">Porównuj wybrane waluty</span><span class="angielski">
                     Compare chosen currencies</span></h1></div>
             <div id="changer">
-                <img class="funkcje-png" src="images/ikona-find-kantor.png" alt="lupa-i-kantor">
+                <img class="functions-png" src="images/icon-find-exchange.png" alt="lupa-i-kantor">
 
                 <h1 class="main-func"><span class="polski"> Znajdz najbliższy kantor</span>
                     <span class="angielski">Find nearest exchange office</span></h1>
@@ -69,43 +70,42 @@
 
         </section>
 
-
-        <section class="funkcjonalnosc-icons cf">
+        <section class="icons-functionality cf">
 
             <div>
-                <img class="funkcje-icon" src="images/functions-icons/idea.png" alt="">
+                <img class="icons-functions" src="images/functions-icons/idea.png" alt="">
                 <br>
 
                 <h1 class="icon-title"><span class="polski">Porady</span><span
                         class="angielski">Valutar Education</span></h1>
             </div>
             <div>
-                <img class="funkcje-icon" src="images/functions-icons/portfel.png" alt="">
+                <img class="icons-functions" src="images/functions-icons/wallet.png" alt="">
                 <br>
 
                 <h1 class="icon-title"><span class="polski">Portfel</span><span
                         class="angielski"> Currency Wallet</span></h1></div>
             <div>
-                <img class="funkcje-icon" src="images/functions-icons/drzewo.png" alt="">
+                <img class="icons-functions" src="images/functions-icons/tree.png" alt="">
                 <br>
 
                 <h1 class="icon-title"><span class="polski">Tranzakcje</span><span
                         class="angielski">Social Transaction</span></h1>
             </div>
             <div>
-                <img class="funkcje-icon" src="images/functions-icons/wykres.png" alt="">
+                <img class="icons-functions" src="images/functions-icons/chart.png" alt="">
                 <br>
 
                 <h1 class="icon-title"><span class="polski">Wykresy</span><span class="angielski"> Charts</span></h1>
             </div>
             <div>
-                <img class="funkcje-icon" src="images/functions-icons/bank.png" alt="">
+                <img class="icons-functions" src="images/functions-icons/bank.png" alt="">
                 <br>
 
                 <h1 class="icon-title"><span class="polski">Wymiana walut</span><span
-                        class="angielski"> Money Changer</span></h1></div>
+                        class="angielski"> Money exchange</span></h1></div>
             <div>
-                <img class="funkcje-icon" src="images/functions-icons/company.png" alt="">
+                <img class="icons-functions" src="images/functions-icons/company.png" alt="">
                 <br>
 
                 <h1 class="icon-title"><span class="polski">Porównaj</span><span class="angielski"> Compare</span></h1>
@@ -115,12 +115,12 @@
         <section id="o-nas" class="cf">
             <div class="o-nas">
 
-                <img class="fotka" src="images/profile/lukasz.png">
+                <img class="photo" src="images/profile/lukasz.png">
 
-                <h1 class="o-nas-naglowki"> Łukasz Smola</h1>
+                <h1 class="about-us-headers"> Łukasz Smola</h1>
                 <br>
 
-                <p class="p-o-nas"><span class="angielski">Lukasz was born in a small exchange office in the countryside. Since
+                <p class="p-about-us"><span class="angielski">Lukasz was born in a small exchange office in the countryside. Since
     he was a child money was sorrounding him .In the age of 18 he opened his first exchange office and very soon become a very
     successful one. He loves all kinds of currencies except Russian rubel.</span>
 
@@ -134,14 +134,14 @@
 
             <div class="o-nas">
 
-                <img class="fotka" src="images/profile/kuba.png">
+                <img class="photo" src="images/profile/kuba.png">
 
 
-                <h1 class="o-nas-naglowki">Jakub Girjat</h1>
+                <h1 class="about-us-headers">Jakub Girjat</h1>
 
                 <br>
 
-                <p class="p-o-nas"><span class="angielski">Kuba has just graduated architecture.
+                <p class="p-about-us"><span class="angielski">Kuba has just graduated architecture.
     He loves order and big glass buildings. For generations Kuba's family was involved in a black market.
      That's why Kuba like to follow this path too. His biggest dream is to buy a small piece of land at the moon.
 
@@ -155,13 +155,13 @@
             </div>
             <div class="o-nas">
 
-                <img class="fotka" src="images/profile/olaf.png">
+                <img class="photo" src="images/profile/olaf.png">
 
-                <h1 class="o-nas-naglowki">Olaf Czempa</h1>
+                <h1 class="about-us-headers">Olaf Czempa</h1>
 
                 <br>
 
-                <p class="p-o-nas"><span class="angielski">The biggest Olaf's passion is his huge old mobile phones' collection.
+                <p class="p-about-us"><span class="angielski">The biggest Olaf's passion is his huge old mobile phones' collection.
     Because most of them Olaf bought abroad, he had to deal with all kids of currencies
      so because of that his passion for money become his new hobby. Olaf's biggest dream is
     to help millions of people in daily money transaction from any place in the world.
@@ -178,13 +178,13 @@
 
             <div class="o-nas">
 
-                <img class="fotka" src="images/profile/aga.png">
+                <img class="photo" src="images/profile/aga.png">
 
-                <h1 class="o-nas-naglowki">Agnieszka Berka</h1>
+                <h1 class="about-us-headers">Agnieszka Berka</h1>
 
                 <br>
 
-                <p class="p-o-nas"><span class="angielski">Since her early days Aga loved to play poker with international crowd
+                <p class="p-about-us"><span class="angielski">Since her early days Aga loved to play poker with international crowd
     and because of that she had to deal with all kids of currencies. She become a very successful player
      and because of that she opended her first online exchange office where you can play poker as well as exchange
     every major currencies in the world.</span>
@@ -209,38 +209,37 @@
 
         <input id="telephone" type="text" name="telField" placeholder="+(XX)XXXXXXXXX"
                pattern='[\+][\(][0-9]{2}[\)][0-9]{3}[0-9]{3}[0-9]{3}'
-               title='Phone Number (Format: +(99)999999999)'>
+              title='Phone Number (Format: +(99)999999999)'>
+
         <br>
         <input id="email" type="email" name="emailField" placeholder="example@domain.com">
         <input type="hidden" name="receiver" value="agnberka@gmail.com">
         <input type="submit" name="submit" value="Send">
-
     </form>
 
     <footer>
         <p class="footer-txt">Copyright &copy; Oliva Hackers Team</p>
 
-        <a class="ikonka-size" href="https://pl-pl.facebook.com/infosharepl/posts/10153488056558654" target="_blank">
-            <img src="socialmedialogos/facebook.png" alt="ikonka facebook"></a>
+        <a class="icon-size" href="https://pl-pl.facebook.com/infosharepl/posts/10153488056558654" target="_blank">
+            <img src="images/socialmedia-logos/facebook.png" alt="ikonka facebook"></a>
 
-        <a class="ikonka-size" href="https://plus.google.com/+infoshare" target="_blank">
-            <img src="socialmedialogos/googleplus.png" alt="ikonka google"></a>
+        <a class="icon-size" href="https://plus.google.com/+infoshare" target="_blank">
+            <img src="images/socialmedia-logos/googleplus.png" alt="ikonka google"></a>
 
-        <a class="ikonka-size" href="https://twitter.com/infosharepl" target="_blank">
-            <img src="socialmedialogos/twitter.png" alt="ikonka twitter"></a>
+        <a class="icon-size" href="https://twitter.com/infosharepl" target="_blank">
+            <img src="images/socialmedia-logos/twitter.png" alt="ikonka twitter"></a>
 
-        <a class="ikonka-size" href="https://www.youtube.com/watch?v=WRNglhnGYrY" target="_blank">
-            <img src="socialmedialogos/youtube2.png" alt="ikonka youtube"></a>
-
+        <a class="icon-size" href="https://www.youtube.com/watch?v=WRNglhnGYrY" target="_blank">
+            <img src="images/socialmedia-logos/youtube2.png" alt="ikonka youtube"></a>
     </footer>
 </div>
-<script src="Javascript/jquery-2.1.4.js"></script>
-<script src="Javascript/cookie-monster.js"></script>
-<script src="Javascript/cookies-js.js"></script>
+<script src="javascript/jquery-2.1.4.js"></script>
+<script src="javascript/cookie-monster.js"></script>
+<script src="javascript/cookies-js.js"></script>
 <script src="javascript/main.js"></script>
 <script src="javascript/menu-underline.js"></script>
 <script src="javascript/is-human.js"></script>
-<script type="text/javascript" src="javascript/zajawkaZdjecia.js"></script>
+<script type="text/javascript" src="javascript/teaser-photo.js"></script>
 <script src="javascript/languages.js"></script>
 <script src="javascript/popupwindow.js"></script>
 <script src="jquery.js"></script>
@@ -248,5 +247,4 @@
 <script src="othello.js"></script>
 
 </body>
-
 </html>

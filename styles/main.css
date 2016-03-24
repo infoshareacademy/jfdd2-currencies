@@ -4,7 +4,6 @@
 .cf:after {
     content: " "; /* 1 */
     display: table; /* 2 */
-
 }
 
 .cf:after {
@@ -25,7 +24,6 @@ body {
     font-family: serif;
     font-size: 16px;
     background-color: white;
-
 }
 
 #max-width {
@@ -42,20 +40,23 @@ body {
     position: fixed;
     box-shadow: 0 2px 3px black;
     z-index: 100;
+
 }
 .menu-button1{
     background-color: #111;
 }
 
-/*SMALL-MENU FUNCTIONS*/
-.menu-small,
-.menu-small ul,
-.menu-small .logo-w-menu {
+/*SMALL-MENU FUNCTIONS +
+UNDERLINED SUBMENUS*/
 
-}
-.menu-small .logo-w-menu {
+/*.menu-small,
+.menu-small ul,
+.menu-small .logo-in-menu {
+
+}*/
+.menu-small .logo-in-menu {
     background-color: #333;
-    height: 45px;
+    height: 40px;
     margin-top: 10px;
     transition-duration: 100ms;
 }
@@ -69,26 +70,23 @@ body {
     line-height: 60px;
     font-size: 20px;
     transition-duration: 200ms;
-
 }
 
 .menu-small li a:hover {
     background-color: #111;
 }
 
-.menu-small .fotka-lang {
+.menu-small .photo-lang {
     margin-top: 17px;
     transition-duration: 200ms;
-
 }
 
 .menu-small .menu1{
     font-size: 20px;
     text-align: inherit;
-
 }
 
-.fotka-lang {
+.photo-lang {
 
     height: 28px;
     width: 28px;
@@ -96,34 +94,29 @@ body {
     padding-right: 10px;
     margin-top: 27px;
     display: inline;
-
 }
 
-.fotka-lang:hover {
+.photo-lang:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
 
-.logo-w-menu {
+.logo-in-menu {
     opacity: 1;
     height: 60px;
     width: auto;
-    margin: 16px;
-    margin-bottom: 10px;
-    margin-left: 23px;
-    margin-top: 10px;
+    margin: 10px 16px 10px 23px;
     float: left;
     transition-duration: 100ms;
-
 }
 
-.logo-w-menu:hover {
+.logo-in-menu:hover {
     transform: scale(1.18);
-
 }
 
 .menu1 {
     float: right;
+
 }
 .menu1 a.selected {
     background-color: #111;
@@ -142,10 +135,6 @@ ul {
     display: none;
 }
 
-.angielski {
-
-}
-
 li {
     float: left;
 }
@@ -158,8 +147,6 @@ li a {
     text-decoration: none;
     line-height: 80px;
     font-size: 20px;
-
-
 }
 
 li a:hover {
@@ -181,24 +168,21 @@ ul {
 /*  HEAD   */
 header {
     padding-top: 80px;
-    background: url("../images/zajawka-bg.png") center no-repeat;
     height: 306px;
-    background-position: bottom;
-
+    background: url("../images/teaser-bg.png") no-repeat bottom;
 }
 
 /* TEASER FUNCTIONS */
 
-.funkcje-png {
+.functions-png {
     height: 100px;
     padding: 30px;
     opacity: 0.6;
     margin-top: 30px;
     transition: transform 0.3s ease-out;
-
 }
 
-.funkcje-png:hover {
+.functions-png:hover {
     transform: scale(1.3);
 }
 
@@ -207,12 +191,10 @@ h1.main-func {
     font-weight: 600;
     font-style: italic;
     color: #5e889e;
-
 }
 
 /*TEASER DESCRIPTION APPEARANCE*/
 .head-paragraph {
-
     color: #162029;
     font-style: italic;
     font-size: 21px;
@@ -221,8 +203,7 @@ h1.main-func {
     padding: 120px 25px 0 10px;
     line-height: 32px;
     text-align: right;
-    text-shadow: 1px 1px 0.5px white;
-
+    text-shadow: 1px 1px 1px white;
 }
 
 /* COMPANY NAME*/
@@ -231,7 +212,7 @@ h1.main-func {
 }
 
 /*FUNCTIONS ICONS*/
-.funkcjonalnosc-icons div {
+.icons-functionality div {
     float: left;
     padding: 30px 0 30px 0;
     height: 80px;
@@ -241,13 +222,12 @@ h1.main-func {
     color: #5e889e;
 }
 
-img.funkcje-icon {
+img.icons-functions {
     height: 60px;
     width: auto;
-
 }
 
-.funkcje-icon:hover {
+.icons-functions:hover {
     animation: pulse2 1.5s linear infinite;
 }
 
@@ -255,17 +235,16 @@ img.funkcje-icon {
     0% {
         transform: scale(1.1);
         opacity: .6;
-
     }
+
     50% {
         transform: scale(0.9);
         opacity: .2;
-
     }
+
     100% {
         transform: scale(1);
         opacity: .6;
-
     }
 }
 
@@ -295,22 +274,21 @@ h1.icon-title {
     line-height: 1.5;
 }
 
-.fotka {
+.photo {
     float: left;
     margin: 20px 10px 0;
     width: 144px;
     height: auto;
 }
 
-.o-nas-naglowki {
+.about-us-headers {
     font-weight: bold;
     font-size: larger;
     font-style: italic;
     text-indent: 40px;
-
 }
 
-.p-o-nas {
+.p-about-us {
     display: block;
     width: 320px;
     float: right;
@@ -406,13 +384,11 @@ footer {
     position: fixed;
     right: 49px;
     bottom: 100px;
-
 }
 
 .arrow {
     width: 40px;
     height: 40px;
-
 }
 
 footer, form.media {
@@ -421,13 +397,14 @@ footer, form.media {
     height: auto;
 }
 
-.ikonka-size img {
+.icon-size img {
     transition: transform 0.3s ease-out;
 }
 
-.ikonka-size img:hover {
+.icon-size img:hover {
     transform: scale(1.2);
 }
+
 /*MEDIA QURIES FOR MOBILES, SMARTPHONES AND TABLETS*/
 
 @media screen and (max-width: 1022px) {
@@ -437,22 +414,22 @@ footer, form.media {
         margin-right: 0;
     }
 
-    /* sekcja głównych funkcjonalnosci */
+    /* SECTION MAIN FUNCTIONALITY  */
     .function_description div {
         height: 100px;
         width: 100%;
         text-align: center;
     }
 
-    /* FUNCTIONALITY SECTION */
-    .funkcjonalnosc-icons div {
+    /* SECTION FUNCTIONALITY */
+    .icons-functionality div {
         height: 80px;
         width: 50%;
         margin: 0 auto;
         text-align: center;
     }
 
-    /* sekcja o nas*/
+    /* SECTION ABOUT US*/
     .o-nas {
         width: 100%;
         float: left;
@@ -464,7 +441,7 @@ footer, form.media {
         line-height: 1.5;
     }
 
-    .p-o-nas {
+    .p-about-us {
         display: block;
         width: 50%;
         float: left;
@@ -473,65 +450,61 @@ footer, form.media {
         margin: 0 5%;
     }
 
-    h1.o-nas-naglowki {
+    h1.about-us-headers {
         display: inline;
         text-align: center;
         margin-bottom: 5px;
         margin-left: 7%;
-
     }
 
-    .fotka {
+    .photo {
         margin-left: 5%;
     }
 
-    /* sekcja z inputami */
+    /* SECTION INPUT */
     input {
         right: 10px;
         margin: 5px 1% 5px 72%;
-
     }
 
-    /* strzałka do powrotu do góry strony*/
+    /* arrow go-to-top*/
     .back-to-top {
         /*display: none;*/
         /*opacity: 1;*/
         position: fixed;
         right: 5px;
         bottom: 90px;
-
     }
 
     .arrow {
         width: auto;
         height: 30px;
-
     }
 }
 
 @media screen and (max-width: 1022px) {
 
-    /* menu  */
+    /* MENU  */
     li:last-child {
         margin-right: 0;
     }
 
-    /* sekcja głównych funkcjonalnosci */
+    /* SECTION MAIN FUNCTIONALITY */
     .function_description div {
         height: 309px;
         width: 100%;
         text-align: center;
     }
 
-    /* sekcja  funkcjonalnosci */
-    .funkcjonalnosc-icons div {
+    /* SECTION FUNCTIONALITY */
+    .icons-functionality div {
         height: 80px;
         width: 50%;
         margin: 0 auto;
         text-align: center;
     }
 
-    /* sekcja o nas*/
+    /* SECTION ABOUT US*/
     .o-nas {
         width: 100%;
         float: left;
@@ -543,7 +516,7 @@ footer, form.media {
         line-height: 1.5;
     }
 
-    .p-o-nas {
+    .p-about-us {
         display: block;
         width: 50%;
         float: left;
@@ -552,33 +525,29 @@ footer, form.media {
         margin: 0 5%;
     }
 
-    h1.o-nas-naglowki {
+    h1.about-us-headers {
         display: inline;
         text-align: center;
         margin-bottom: 5px;
         margin-left: 7%;
-
     }
 
-    .fotka {
+    .photo {
         margin-left: 5%;
     }
 
-    /* sekcja z inputami */
+    /* SECTION WITH INPUTS */
     input {
         right: 10px;
         margin: 5px 1% 5px 72%;
-
     }
 
-    /* strzałka do powrotu do góry strony*/
+    /* ARROW GO TO TOP*/
     .back-to-top {
         /*display: none;*/
         /*opacity: 1;*/
         position: fixed;
         right: 10px;
         bottom: 90px;
-
     }
-
 }
