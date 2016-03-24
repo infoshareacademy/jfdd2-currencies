@@ -105,10 +105,7 @@ UNDERLINED SUBMENUS*/
     opacity: 1;
     height: 60px;
     width: auto;
-    margin: 16px;
-    margin-bottom: 10px;
-    margin-left: 23px;
-    margin-top: 10px;
+    margin: 10px 16px 10px 23px;
     float: left;
     transition-duration: 100ms;
 }
@@ -171,9 +168,8 @@ ul {
 /*  HEAD   */
 header {
     padding-top: 80px;
-    background: url("../images/teaser-bg.png") center no-repeat;
     height: 306px;
-    background-position: bottom;
+    background: url("../images/teaser-bg.png") no-repeat bottom;
 }
 
 /* TEASER FUNCTIONS */
@@ -207,7 +203,7 @@ h1.main-func {
     padding: 120px 25px 0 10px;
     line-height: 32px;
     text-align: right;
-    text-shadow: 1px 1px 0.5px white;
+    text-shadow: 1px 1px 1px white;
 }
 
 /* COMPANY NAME*/
@@ -554,5 +550,4 @@ footer, form.media {
         right: 10px;
         bottom: 90px;
     }
-
 }
