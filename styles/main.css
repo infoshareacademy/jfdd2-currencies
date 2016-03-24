@@ -4,6 +4,7 @@
 .cf:after {
     content: " "; /* 1 */
     display: table; /* 2 */
+
 }
 
 .cf:after {
@@ -39,8 +40,51 @@ body {
     margin: 0 auto;
     background-color: #333;
     position: fixed;
-    box-shadow: 0px 2px 3px black;
+    box-shadow: 0 2px 3px black;
     z-index: 100;
+}
+.menu-button1{
+    background-color: #111;
+}
+
+/*SMALL-MENU FUNCTIONS*/
+.menu-small,
+.menu-small ul,
+.menu-small .logo-w-menu {
+
+}
+.menu-small .logo-w-menu {
+    background-color: #333;
+    height: 45px;
+    margin-top: 10px;
+    transition-duration: 100ms;
+}
+
+.menu-small li a  {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 0 15px;
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 20px;
+    transition-duration: 200ms;
+
+}
+
+.menu-small li a:hover {
+    background-color: #111;
+}
+
+.menu-small .fotka-lang {
+    margin-top: 17px;
+    transition-duration: 200ms;
+
+}
+
+.menu-small .menu1{
+    font-size: 20px;
+    text-align: inherit;
 
 }
 
@@ -49,8 +93,8 @@ body {
     height: 28px;
     width: 28px;
     float: right;
-    padding-right: 7px;
-    margin-top: 48px;
+    padding-right: 10px;
+    margin-top: 27px;
     display: inline;
 
 }
@@ -60,7 +104,7 @@ body {
     cursor: pointer;
 }
 
-#logo-w-menu {
+.logo-w-menu {
     opacity: 1;
     height: 60px;
     width: auto;
@@ -69,18 +113,20 @@ body {
     margin-left: 23px;
     margin-top: 10px;
     float: left;
-    transition: transform .2s ease-out;
+    transition-duration: 100ms;
 
 }
 
-#logo-w-menu:hover {
+.logo-w-menu:hover {
     transform: scale(1.18);
 
 }
 
 .menu1 {
-
     float: right;
+}
+.menu1 a.selected {
+    background-color: #111;
 }
 
 ul {
@@ -112,6 +158,8 @@ li a {
     text-decoration: none;
     line-height: 80px;
     font-size: 20px;
+
+
 }
 
 li a:hover {
@@ -130,11 +178,6 @@ ul {
     background-color: #333;
 }
 
-li a:hover {
-    background-color: #111;
-
-}
-
 /*  HEAD   */
 header {
     padding-top: 80px;
@@ -144,7 +187,7 @@ header {
 
 }
 
-/* FUNKCJE ZAJAWKI */
+/* TEASER FUNCTIONS */
 
 .funkcje-png {
     height: 100px;
@@ -167,7 +210,7 @@ h1.main-func {
 
 }
 
-/*wygląd opisu zajawki*/
+/*TEASER DESCRIPTION APPEARANCE*/
 .head-paragraph {
 
     color: #162029;
@@ -182,12 +225,12 @@ h1.main-func {
 
 }
 
-/* nazwa firmy*/
+/* COMPANY NAME*/
 .company {
     font-weight: 600;
 }
 
-/*IKONY FUNKCJI*/
+/*FUNCTIONS ICONS*/
 .funkcjonalnosc-icons div {
     float: left;
     padding: 30px 0 30px 0;
@@ -233,7 +276,7 @@ h1.icon-title {
     color: #8CCAEB;
 }
 
-/* Opis o nas*/
+/* DESCRIPTION ABOUT-US*/
 . #o-nas {
     background-color: #333;
     color: white;
@@ -275,7 +318,7 @@ h1.icon-title {
     padding: 5px;
 }
 
-/*  INPUT EMAIL */
+/*  INPUT E-MAIL */
 form {
     bottom: 50px;
     clear: both;
@@ -385,8 +428,7 @@ footer, form.media {
 .ikonka-size img:hover {
     transform: scale(1.2);
 }
-
-/*  ZASTOSOWANIE MEDIA QuERIES DO DOSTOSOWANIA STRONY DLA KOMOREK I TABLETOW*/
+/*MEDIA QURIES FOR MOBILES, SMARTPHONES AND TABLETS*/
 
 @media screen and (max-width: 1022px) {
 
@@ -402,7 +444,7 @@ footer, form.media {
         text-align: center;
     }
 
-    /* sekcja  funkcjonalnosci */
+    /* FUNCTIONALITY SECTION */
     .funkcjonalnosc-icons div {
         height: 80px;
         width: 50%;
