@@ -3,8 +3,8 @@ $(document).ready(function() {
   $('form').submit(openWin);
 
   function openWin() {
-    myWindow = window.open("", "myWindow", "width=200, height=100");
-    myWindow.document.write("<p>We hate Othello</p>");
+    myWindow = window.open("http://localhost:63342/jfdd2-currencies/othello/", "myWindow", "width=600, height=600");
+    //myWindow.document.write("<p>We hate Othello</p>");
     return false;
   }
 
