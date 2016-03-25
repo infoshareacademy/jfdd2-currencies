@@ -17,7 +17,7 @@ var sumOfPounds = 0;
 var $resultPounds = $('<p>').addClass('result');
 var $resultDollar = $('<p>').addClass('result');
 var $finalResult = $("<p>").addClass('result');
-var $hints = $("<p>").addClass('result visibility');
+var $hints = $("<p>").addClass('result');
 
 $('#signature').append($resultDollar, $resultPounds, $hints, $finalResult);
 
@@ -51,13 +51,7 @@ $(function () {
 
         if (nodeHasChecker(node)) {
             console.log('This cell is occupied.');
-
             $hints.text('hint: This cell is occupied.');
-            var hintTimeout = setTimeout(function(){
-                $hints.toggleClass();
-            }, 3000);
-
-
             return;
         }
 
@@ -131,18 +125,21 @@ Math.roundTo = function (number, precision) {
 function endGame(board, player) {
     var $board = $(board);
     console.log('Game over');
+    var sumOfCheckers =  $board.find('.' + player.name).length;
 
 
-    if (player.name === 'dollar') {
+    if (player.name === 'dollar' &&  sumOfCheckers > 32 ) {
+        return $finalResult.text('Player ' + player.name + ' winns with: ' + $board.find('.' + player.name).length + ' checkers fields and  sum of cash: ' + Math.roundTo(sumOfDollars, 3) + ' dollars'),
+        console.log('Player ' + player.name + ' winns with: ' + $board.find('.' + player.name).length + ' checkers fields and  sum of cash: ' + Math.roundTo(sumOfDollars, 3) + ' pounds'),
+        console.log('Player ' + player.next.name + ' has ' + Math.roundTo(sumOfDollars, 3) + ' dollars');
+
+    } else if(player.name === 'pound' &&  sumOfCheckers > 32) {
         return $finalResult.text('Player ' + player.name + ' winns with: ' + $board.find('.' + player.name).length + ' checkers fields and  sum of cash: ' + Math.roundTo(sumOfPounds, 3) + ' pounds'),
-        console.log('Player ' + player.name + ' winns with: ' + $board.find('.' + player.name).length + ' checkers fields and  sum of cash: ' + Math.roundTo(sumOfPounds, 3) + ' pounds'),
-        console.log('Player ' + player.next.name + ' has ' + sumOfDollars + ' dollars');
-    } else {
-        return $finalResult.text('Player ' + player.name + ' winns with: ' + $board.find('.' + player.name).length + ' checkers fields and  sum of cash: ' + Math.roundTo(sumOfDollars, 3) + ' pounds'),
-        console.log('Player ' + player.name + ' wins with: ' + $board.find('.' + player.name).length + ' checkers fields, sum of cash: ' + Math.roundTo(sumOfDollars, 3) + ' dollars'),
-        console.log('Player ' + player.next.name + 'has ' + sumOfPounds + ' pounds'),
-        $board.off('click');
+        console.log('Player ' + player.name + ' wins with: ' + $board.find('.' + player.name).length + ' checkers fields, sum of cash: ' + Math.roundTo(sumOfPounds, 3) + ' pounds'),
+        console.log('Player ' + player.next.name + 'has ' + Math.roundTo( sumOfDollars , 3)+ ' dollars');
+
     }
+     $board.off('click');
 }
 //this function get values of surrounding fields in eight directions
 // prev() indicate one row to top
