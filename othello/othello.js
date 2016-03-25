@@ -13,11 +13,11 @@ players.pound.next = players.dollar;
 
 //declaration: counter of exchange rates
 var sumOfDollars = 0;
-var $resultDollar = $('<p>').addClass('result');
 var sumOfPounds = 0;
 var $resultPounds = $('<p>').addClass('result');
-var $hints = $("<p>").addClass('result');
-var $finalResult = $("<p>");
+var $resultDollar = $('<p>').addClass('result');
+var $finalResult = $("<p>").addClass('result');
+var $hints = $("<p>").addClass('result visibility');
 
 $('#signature').append($resultDollar, $resultPounds, $hints, $finalResult);
 
@@ -51,7 +51,13 @@ $(function () {
 
         if (nodeHasChecker(node)) {
             console.log('This cell is occupied.');
+
             $hints.text('hint: This cell is occupied.');
+            var hintTimeout = setTimeout(function(){
+                $hints.toggleClass();
+            }, 3000);
+
+
             return;
         }
 
@@ -116,10 +122,10 @@ Math.roundTo = function (number, precision) {
   for (var i = precision; i > 0; i--) {
     potega *= 10;
   }
-  var toPrecision = Math.round(number* potega)
+  var toPrecision = Math.round(number* potega);
   return  toPrecision/potega;
 
-}
+};
 
 
 function endGame(board, player) {
@@ -132,7 +138,7 @@ function endGame(board, player) {
         console.log('Player ' + player.name + ' winns with: ' + $board.find('.' + player.name).length + ' checkers fields and  sum of cash: ' + Math.roundTo(sumOfPounds, 3) + ' pounds'),
         console.log('Player ' + player.next.name + ' has ' + sumOfDollars + ' dollars');
     } else {
-        return $finalResult.text('Player ' + player.name + ' winns with: ' + $board.find('.' + player.name).length + ' checkers fields and  sum of cash: ' + Math.roundTo(sumOfPounds, 3) + ' pounds'),
+        return $finalResult.text('Player ' + player.name + ' winns with: ' + $board.find('.' + player.name).length + ' checkers fields and  sum of cash: ' + Math.roundTo(sumOfDollars, 3) + ' pounds'),
         console.log('Player ' + player.name + ' wins with: ' + $board.find('.' + player.name).length + ' checkers fields, sum of cash: ' + Math.roundTo(sumOfDollars, 3) + ' dollars'),
         console.log('Player ' + player.next.name + 'has ' + sumOfPounds + ' pounds'),
         $board.off('click');
