@@ -228,7 +228,7 @@ img.icons-functions {
 }
 
 .icons-functions:hover {
-    animation: pulse2 1.5s linear infinite;
+    animation: pulse2 3s linear infinite;
 }
 
 @-webkit-keyframes pulse2 {

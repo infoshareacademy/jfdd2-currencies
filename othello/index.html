@@ -1,4 +1,7 @@
 <style>
+    body {
+        background-color: lightgrey;
+    }
     .cell {
         width: 50px;
         height: 50px;
@@ -28,13 +31,30 @@
         background-size: 29px;
     }
 
+    .result {
+        display: block;
+        text-align: center;
+    }
+
+
+
     table {
         margin: 0 auto;
         margin-top: 50px;
     }
+    #head{
+        font-size: 30px;
+        font-weight: 700;
+        font-style: italic;
+        margin-top: 34px;
+        color: #162029;
+        text-align: center;
+    }
 
 </style>
+<div id="head">Currencies OTHELLO</div>
 <div id="app"></div>
+<div id="signature"></div>
 <script src="jquery.js"></script>
 <script src="utils.js"></script>
 <script src="othello.js"></script>
