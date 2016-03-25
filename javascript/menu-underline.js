@@ -21,7 +21,7 @@ $(function () {
     }).reduce(function (prev, next) {
       console.log(prev, next);
       if (windowScroll >= prev.value && windowScroll < next.value) {
-        $('.menu1 a[href=' + prev.name + ']').addClass('selected');
+        $('.menu1 a[href="' + prev.name + '"]').addClass('selected');
       }
       return next;
     });
