@@ -13,11 +13,11 @@ players.pound.next = players.dollar;
 
 //declaration: counter of exchange rates
 var sumOfDollars = 0;
-var $resultDollar = $('<p>').addClass('result');
 var sumOfPounds = 0;
 var $resultPounds = $('<p>').addClass('result');
+var $resultDollar = $('<p>').addClass('result');
+var $finalResult = $("<p>").addClass('result');
 var $hints = $("<p>").addClass('result');
-var $finalResult = $("<p>");
 
 $('#signature').append($resultDollar, $resultPounds, $hints, $finalResult);
 
@@ -67,11 +67,11 @@ $(function () {
 
         if (player.name === 'dollar') {
             //
-            sumOfDollars += oponentNodes.length * 0.708;
+            sumOfDollars += oponentNodes.length;
             console.log('Player 1 has ' + Math.roundTo(sumOfDollars, 3) + ' dollars');
             $resultDollar.text('You\'ve got: ' + Math.roundTo(sumOfDollars, 3) + ' dollars in your wallet!');
         } else {
-            sumOfPounds += oponentNodes.length * 1.413;
+            sumOfPounds += oponentNodes.length;
             console.log('Player 2 has ' + Math.roundTo(sumOfPounds, 3) + ' pounds');
             $resultPounds.text('Computer has ' + Math.roundTo(sumOfPounds, 3) + ' pounds.');
 
@@ -116,27 +116,25 @@ Math.roundTo = function (number, precision) {
   for (var i = precision; i > 0; i--) {
     potega *= 10;
   }
-  var toPrecision = Math.round(number* potega)
+  var toPrecision = Math.round(number* potega);
   return  toPrecision/potega;
 
-}
+};
 
 
 function endGame(board, player) {
     var $board = $(board);
     console.log('Game over');
+    var sumOfCheckers =  Math.roundTo($board.find('.' + player.name).length, 3);
 
-
-    if (player.name === 'dollar') {
-        return $finalResult.text('Player ' + player.name + ' winns with: ' + $board.find('.' + player.name).length + ' checkers fields and  sum of cash: ' + Math.roundTo(sumOfPounds, 3) + ' pounds'),
-        console.log('Player ' + player.name + ' winns with: ' + $board.find('.' + player.name).length + ' checkers fields and  sum of cash: ' + Math.roundTo(sumOfPounds, 3) + ' pounds'),
-        console.log('Player ' + player.next.name + ' has ' + sumOfDollars + ' dollars');
-    } else {
-        return $finalResult.text('Player ' + player.name + ' winns with: ' + $board.find('.' + player.name).length + ' checkers fields and  sum of cash: ' + Math.roundTo(sumOfPounds, 3) + ' pounds'),
-        console.log('Player ' + player.name + ' wins with: ' + $board.find('.' + player.name).length + ' checkers fields, sum of cash: ' + Math.roundTo(sumOfDollars, 3) + ' dollars'),
-        console.log('Player ' + player.next.name + 'has ' + sumOfPounds + ' pounds'),
-        $board.off('click');
+    if (player.name === 'dollar' &&  sumOfDollars > sumOfPounds ) {
+        return $finalResult.text('Congratulations! You win with : ' + Math.roundTo(sumOfDollars, 3) + ' dollars!');
+    } else if(player.name === 'pound' &&  sumOfDollars < sumOfPounds) {
+        return $finalResult.text('Computer wins with : ' + Math.roundTo(sumOfPounds, 3) + ' pounds!');
+    } else if (sumOfDollars === sumOfPounds) {
+        return  'Score draw!  Cash: ' + sumOfDollars;
     }
+     $board.off('click');
 }
 //this function get values of surrounding fields in eight directions
 // prev() indicate one row to top
@@ -169,34 +167,34 @@ function endangeredOponentNodes(domNode, player) {
             return $(node).parent().prev().find(':nth-child(' + ($(node).index() - 0) + ')');
         } // top-left
     ].map(function (dir) {
-        return nodesWithCheckers(domNode, dir);      //zwraca tablice uzupelniona o wartosci w roznych kierunkach
+        return nodesWithCheckers(domNode, dir);
     }).filter(function (checkerNodesInDirection) {
-        return checkerIsOponent(checkerNodesInDirection.head(), player) && // sprawdzenie warunku czy pierwszy element jest przeciwnikiem
-            checkersContainPlayer(checkerNodesInDirection.tail(), player);   // oraz czy na koncu danego kierunku znajduje sie pionek aktualnego gracza
-                                                                             // warunek postawienia checkera
+        return checkerIsOponent(checkerNodesInDirection.head(), player) &&
+            checkersContainPlayer(checkerNodesInDirection.tail(), player);
+
     }).reduce(function (prev, checkerNodes) {
-        return prev.concat(takeOponentsUntilPlayer(checkerNodes, player));  // zwraca liczbe pol, ktore mozna obrocic
+        return prev.concat(takeOponentsUntilPlayer(checkerNodes, player));
     }, []);
 }
 
-function takeOponentsUntilPlayer(checkers, player) {                   //pobiera pola przeciwnika, dopoki sie powtarzaja
-    return checkers.takeUntil(function (item) {                          // pozwala na wskazanie pol do obrocenia
+function takeOponentsUntilPlayer(checkers, player) {
+    return checkers.takeUntil(function (item) {
         return $(item).hasClass(player.name);
     });
 }
 
-function checkerIsOponent(checker, player) {                           //zwraca informacje czy wskazane pole to nasz przeciwnik
+function checkerIsOponent(checker, player) {
     return $(checker).hasClass(player.next.name);
 }
 
-function checkersContainPlayer(checkers, player) {                       //sprawdza czy w danej tablicy jest gdzies nasz chceker
-    return checkers.some(function (checker) {                             // funkcje wyorzystywana w warunku postawienie checkera
+function checkersContainPlayer(checkers, player) {
+    return checkers.some(function (checker) {
         return $(checker).hasClass(player.name);
     });
 }
 
-function putCheckerOnNode(node, player) {                               //przypisanie do pola chcekera danego gracza
-    var $node = $(node);                                                  // jesli dane pole jeszcze go nie ma
+function putCheckerOnNode(node, player) {
+    var $node = $(node);
     if ($node.hasClass('checker')) {
         return 'This field is occupied';
     } else {
@@ -204,17 +202,17 @@ function putCheckerOnNode(node, player) {                               //przypi
     }
 }
 
-function replaceOponentNodes(nodes, player) {                           // exchange zamiana waluty przejetych pol
+function replaceOponentNodes(nodes, player) {
     nodes.forEach(function (node) {
         $(node).removeClass(player.next.name).addClass(player.name);
     });
 }
 
-function nodeHasChecker(node) {                                         // sprawdzenie czy wskazane pole ma klase checker
+function nodeHasChecker(node) {
     return $(node).hasClass('checker');
 }
 
-function nodesWithCheckers(node, dir) {                                 //
+function nodesWithCheckers(node, dir) {
     var nodes = [];
     var nextNode = dir(node);
     if (nodeHasChecker(nextNode)) {
@@ -238,7 +236,7 @@ function gameBoard(size, player) {
             );
         }));
     }));
-    // próba generowania klikniecia komputera
+
 
 }
 
