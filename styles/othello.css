@@ -1,0 +1,107 @@
+body {
+    background-color: lightgrey;
+}
+
+/* header of game */
+#head{
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
+    margin-top: 34px;
+    color: #162029;
+    text-align: center;
+}
+
+/*  game board */
+.cell {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #8CCAEB;
+    background: #333333;
+}
+.cell:hover {
+    background-color: #5E1215
+}
+
+/* score */
+#score-wrapper {
+    margin: 70px auto;
+}
+.score {
+    float: left;
+    margin: 40px 50px 20px 70px;
+    background: url(../images/othello-icons/wallet.png);
+    background-size: 100px auto;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+}
+.dollar {
+    background-image: url("../images/othello-icons/dollar.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 23px;
+}
+.pound {
+    background-image: url("../images/othello-icons/pound.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 29px;
+}
+
+/* information about moves */
+.result {
+    text-align: center;
+    display: block;
+}
+
+/* hints alert */
+.hint{
+    margin: 30px 70px;
+    color: #B02227;
+    font-weight: 600;
+    text-align: center;
+    display: inline-block;
+    width: 220px;
+    float: left;
+    padding: 10px;
+    border: 1px solid #B02227;
+    border-radius: 10px 10px;
+}
+h1{
+    font-size: 20px;
+    font-weight: 600;
+    color: #5E1215;
+    position: relative;
+    top: -35px;
+    text-align: center;
+}
+#score-title-computer, #score-title-player {
+    font-size: 24px;
+    font-weight: 600;
+    color: #5E1215;
+    text-align: center;
+    margin-top: 23px;
+}
+table {
+    float: left;
+    margin: 50px 10px 0 70px;
+}
+
+/* alert footer after game is over */
+#winner-alert {
+    background-color: #5E1215;
+    width: 100%;
+    height: 30px;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+}
+.winner-text {
+    font-size: 20px;
+    text-align: center;
+    color: lightgoldenrodyellow;
+    opacity: 0;
+    padding: 16px;
+    padding-top: 20px;
+}
