@@ -14,12 +14,13 @@ players.pound.next = players.dollar;
 //declaration: counter of exchange rates
 var sumOfDollars = 0;
 var sumOfPounds = 0;
-var $resultPounds = $('<p>').addClass('result');
-var $resultDollar = $('<p>').addClass('result');
-var $finalResult = $("<p>").addClass('result');
-var $hints = $("<p>").addClass('result');
+var $resultPounds = $('#score-title-computer');
+var $resultDollar = $('#score-title-player');
+var $finalResult = $('#winner-alert');
+var $hints = $("<p>").addClass('hint').text('Hints!');
+//
+$('#signature').append( $hints, $finalResult);
 
-$('#signature').append($resultDollar, $resultPounds, $hints, $finalResult);
 
 
 $(function () {
@@ -59,7 +60,7 @@ $(function () {
         if (oponentNodes.length === 0) {
             if (player.name === 'dollar'){
                 console.log('You cannot put ' + player.name + ' checker here!');
-                $hints.text('hint: You cannot put ' + player.name + ' checker here!');
+                $hints.text('You can\'nt put ' + player.name + ' checker here!');
             }
             return;
         }
@@ -69,11 +70,11 @@ $(function () {
             //
             sumOfDollars += oponentNodes.length;
             console.log('Player 1 has ' + Math.roundTo(sumOfDollars, 3) + ' dollars');
-            $resultDollar.text('You\'ve got: ' + Math.roundTo(sumOfDollars, 3) + ' dollars in your wallet!');
+            $resultDollar.text( Math.roundTo(sumOfDollars, 3));
         } else {
             sumOfPounds += oponentNodes.length;
             console.log('Player 2 has ' + Math.roundTo(sumOfPounds, 3) + ' pounds');
-            $resultPounds.text('Computer has ' + Math.roundTo(sumOfPounds, 3) + ' pounds.');
+            $resultPounds.text( Math.roundTo(sumOfPounds, 3));
 
         }
 
@@ -88,8 +89,7 @@ $(function () {
             return player = player.next;
         }
 
-        return console.log('Oponent does not have valid moves. ' + player.name + ' has one extra move.'),
-            $hints.text('hint: Oponent does not have valid moves. ' + player.name + ' has one extra move.');
+        return $hints.text('hint: Oponent does not have valid moves. ' + player.name + ' has one extra move.');
 
 
     }));
@@ -124,15 +124,14 @@ Math.roundTo = function (number, precision) {
 
 function endGame(board, player) {
     var $board = $(board);
-    console.log('Game over');
-    var sumOfCheckers =  Math.roundTo($board.find('.' + player.name).length, 3);
+    //var sumOfCheckers =  Math.roundTo($board.find('.' + player.name).length, 3);
 
     if (player.name === 'dollar' &&  sumOfDollars > sumOfPounds ) {
-        return $finalResult.text('Congratulations! You win with : ' + Math.roundTo(sumOfDollars, 3) + ' dollars!');
+        return $('#winner-alert').addClass("winner-text").text('Congratulations! You win with : ' + Math.roundTo(sumOfDollars, 3) + ' dollars!').css({'opacity': '1'});
     } else if(player.name === 'pound' &&  sumOfDollars < sumOfPounds) {
-        return $finalResult.text('Computer wins with : ' + Math.roundTo(sumOfPounds, 3) + ' pounds!');
+        return $('#winner-alert').addClass("winner-text").text('Computer wins with : ' + Math.roundTo(sumOfPounds, 3) + ' pounds!').css({'opacity': '1'});
     } else if (sumOfDollars === sumOfPounds) {
-        return  'Score draw!  Cash: ' + sumOfDollars;
+        return  $('#winner-alert').addClass("winner-text").text('Score draw!  Cash: ' + sumOfDollars).css({'opacity': '1'});
     }
      $board.off('click');
 }
