@@ -60,7 +60,7 @@ $(function () {
         if (oponentNodes.length === 0) {
             if (player.name === 'dollar'){
                 console.log('You cannot put ' + player.name + ' checker here!');
-                $hints.text('You can\'nt put ' + player.name + ' checker here!');
+                $hints.text('You can\'t put ' + player.name + ' checker here!');
             }
             return;
         }
