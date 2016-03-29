@@ -1,5 +1,5 @@
 body {
-    background-color: lightgrey;
+    background-color: #d3d3d3;
 }
 
 /* header of game */
@@ -56,8 +56,8 @@ body {
 }
 
 /* hints alert */
-.hint{
-    margin: 30px 70px;
+.hint {
+    margin: 20px 70px 30px 70px;
     color: #B02227;
     font-weight: 600;
     text-align: center;
@@ -68,6 +68,7 @@ body {
     border: 1px solid #B02227;
     border-radius: 10px 10px;
 }
+
 h1{
     font-size: 20px;
     font-weight: 600;
@@ -104,4 +105,16 @@ table {
     opacity: 0;
     padding: 16px;
     padding-top: 20px;
+}
+
+/*game rules details*/
+
+#game-rules {
+    display: block;
+    float: right;
+    text-align: right;
+    margin-top: 30px;
+    margin-right: 45px;
+    width: 40%;
+
 }

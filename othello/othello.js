@@ -33,7 +33,6 @@ $(function () {
             return;
         }
         var $cells = $('td:not(.checker)');
-        //console.log($cells);
         var howMany = $cells.length;
         if (howMany === 0) {
             clearInterval(intervalId);
@@ -41,7 +40,6 @@ $(function () {
         }
         var randomFloat = Math.random() * howMany;
         var randomInt = Math.round(randomFloat) % howMany;
-        //console.log($cells.eq(randomInt));
         $cells.eq(randomInt).click();
     }, 50);
 
@@ -52,7 +50,7 @@ $(function () {
 
         if (nodeHasChecker(node)) {
             console.log('This cell is occupied.');
-            $hints.text('hint: This cell is occupied.');
+            $hints.text('hint: This cell is occupied.').fadeIn(500).fadeOut(4000);
             return;
         }
 
@@ -60,7 +58,7 @@ $(function () {
         if (oponentNodes.length === 0) {
             if (player.name === 'dollar'){
                 console.log('You cannot put ' + player.name + ' checker here!');
-                $hints.text('You can\'nt put ' + player.name + ' checker here!');
+                $hints.text('You can\'t put ' + player.name + ' checker here!').fadeIn(500).fadeOut(4000);
             }
             return;
         }
@@ -89,7 +87,7 @@ $(function () {
             return player = player.next;
         }
 
-        return $hints.text('hint: Oponent does not have valid moves. ' + player.name + ' has one extra move.');
+        return $hints.text('hint: Oponent does not have valid moves. ' + player.name + ' has one extra move.').fadeIn(1500).fadeOut(6000);
 
 
     }));
