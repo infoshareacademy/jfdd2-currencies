@@ -3,7 +3,7 @@ $(document).ready(function() {
   $('form').submit(openWin);
 
   function openWin() {
-    myWindow = window.open("http://localhost:63342/jfdd2-currencies/othello/", "myWindow", "width=1000, height=800");
+    myWindow = window.open("http://www.currencies.jfdd2.infoshareaca.nazwa.pl/othello/", "myWindow", "width=1000, height=800");
     //myWindow.document.write("<p>We hate Othello</p>");
     return false;
   }
