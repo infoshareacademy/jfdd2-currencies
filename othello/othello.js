@@ -33,7 +33,6 @@ $(function () {
             return;
         }
         var $cells = $('td:not(.checker)');
-        //console.log($cells);
         var howMany = $cells.length;
         if (howMany === 0) {
             clearInterval(intervalId);
@@ -41,7 +40,6 @@ $(function () {
         }
         var randomFloat = Math.random() * howMany;
         var randomInt = Math.round(randomFloat) % howMany;
-        //console.log($cells.eq(randomInt));
         $cells.eq(randomInt).click();
     }, 50);
 
