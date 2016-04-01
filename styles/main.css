@@ -112,6 +112,13 @@ UNDERLINED SUBMENUS*/
 
 .logo-in-menu:hover {
     transform: scale(1.18);
+
+}
+
+/*LOGIN BUTON*/
+
+.menu-login{
+    float:left;
 }
 
 .menu1 {
