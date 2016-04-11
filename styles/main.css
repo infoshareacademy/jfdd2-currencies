@@ -118,20 +118,18 @@ UNDERLINED SUBMENUS*/
 /*LOGIN BUTON*/
 
 .log-in-button {
-    height: 30px;
-    padding-top: 5px;
-    border-radius: 5px 5px 5px 5px;
+    height: 40px;
+    padding: 0 5px 0 5px;
+    border-radius: 8px 8px;
     box-shadow: none;
-    border: none;
+    border: 2px solid #5E1215;
     cursor: pointer;
     font-family: serif;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 20px;
     text-align: center;
-
-
+    background-color: white;
 }
-
 
 .menu-login{
     float:left;
